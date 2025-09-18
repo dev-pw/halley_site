@@ -12,19 +12,22 @@
 
             <div class="col-lg-3">
                 <div class="bg-primary">
-                    s
+                    <i class="fa-solid fa-circle-radiation"></i>
+                    <p>Transporte de Material Biológico</p>
                 </div>
             </div>
 
              <div class="col-lg-3">
                 <div class="bg-primary">
-                    s
+                    <i class="fa-solid fa-briefcase-medical"></i>
+                    <p>Transporte de Produtos Farmacêuticos</p>
                 </div>
             </div>
 
              <div class="col-lg-3">
                 <div class="bg-primary">
-                    s
+                    <i class="fa-solid fa-box-open"></i>
+                    <p>Transporte de Carga Seca</p>
                 </div>
             </div>
         </div>
