@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Adicionando arquivos no FTP
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Pegando códigos
+      uses: actions/checkout@v4
+
+    - name: 📂 Upload de Arquivos
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.host }}
+        username: ${{ secrets.user }}
+        password: ${{ secrets.pass }}
+        server-dir: public_html/halley/wp-content/themes/halley/
+        local-dir: ./themes/halley/
