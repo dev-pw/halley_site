@@ -1,0 +1,26 @@
+services:
+  wordpress:
+    restart: always
+    container_name: Halley
+    build:
+      context: .
+    image: wordpress:6.8.2-php8.2
+    volumes:
+      - ./.env:/var/www/html/.env
+      - ./server/vendor:/var/www/html/vendor
+      - ./server/php.ini:/usr/local/etc/php/php.ini
+      - ./server/wp-config.php:/var/www/html/wp-config.php
+      - ./uploads:/var/www/html/wp-content/uploads/
+      - ./plugins:/var/www/html/wp-content/plugins/
+      - ./themes/halley:/var/www/html/wp-content/themes/halley/
+    environment:
+      WORDPRESS_LOCALE: pt_BR
+    ports:
+      - "80:80"
+    command: >
+      sh -c "docker-entrypoint.sh apache2-foreground & sleep 10 &&
+             rm -rf /var/www/html/wp-content/themes/twenty* &&
+             rm -rf /var/www/html/wp-content/plugins/akismet &&
+             rm -rf /var/www/html/wp-content/plugins/hello.php &&
+             echo 'Temas e plugins padrão removidos!' &&
+             wait"

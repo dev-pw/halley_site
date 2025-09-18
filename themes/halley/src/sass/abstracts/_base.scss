@@ -1,0 +1,231 @@
+body{
+    overflow-x: hidden;
+}
+
+main {
+
+    padding-top: 98px;
+
+    @include media-breakpoint-up('md') {
+        padding-top: 115px;
+    }
+
+    // @include media-breakpoint-up(xl) {
+    //     padding-top: 125px;
+    // }
+
+    // .home & {
+
+    //     @include media-breakpoint-up(xl) {
+    //         padding-top: 0;
+    //     }
+    // }
+}
+
+ul{
+    li{
+        &::marker{
+            color: $secondary;
+        }
+    }
+}
+.s-post-metadata {
+    a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark;
+            text-decoration: underline;
+        }
+    }
+
+    &--light {
+        a {
+            color: $white;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+// iframe 100% largura
+.wp-block-embed__wrapper{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+// Esconde o AddtoAny gerado automaticamente
+.addtoany_share_save_container{
+    display: none;
+}
+
+// Plugin pdf embedder
+.pdfemb-viewer{
+    z-index: 2;
+}
+
+.entry-content-post {
+
+    >* {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    p:not(.has-text-align-center) {
+        @media (min-width: 791px) {
+            text-align: justify;
+        }
+    }
+
+    a {
+        @extend .text-break;
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: $primary;
+        }
+    }
+
+    .wp-element-button{
+        background-color: $secondary;
+        color: #fff ;
+        padding: 7px 30px;
+      }
+
+    // p.btn-content{
+    //     a{
+    //         @extend .btn, .btn-secondary, .btn-hover-outline;
+    //     }
+    // }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $primary;
+    }
+
+    h2 {
+        color: $primary;
+
+        &:not(:first-child) {
+            margin-top: 4rem;
+        }
+
+        &.wp-block-heading{
+            color: $primary;
+        }
+    }
+
+    h3 {
+        &:not(:first-child) {
+            margin-top: 3rem;
+        }
+    }
+
+    ul {
+        @extend .ps-0;
+
+        li {
+            list-style: none;
+            padding-left: 30px;
+            line-height: 1.5;
+
+            &:not(:first-child) {
+                margin-top: .5rem;
+            }
+
+            &:before {
+                content: '\f111';
+                font-family: "Font Awesome 6 Free";
+                font-style: normal;
+                margin: 0px 20px 0px 10px;
+                text-decoration: none;
+                color: $primary;
+                font-size: 10px;
+                margin-left: -30px;
+            }
+        }
+    }
+
+    ol {
+        li {
+            line-height: 1.5;
+
+            &:not(:first-child) {
+                margin-top: .5rem;
+            }
+        }
+    }
+
+    .wp-block-file{
+        a{
+            @extend .btn, .btn-secondary, .link-light, .text-decoration-none, .py-2;
+        }
+    }
+    
+    .wp-block-button {
+        
+        &__link {
+            padding: 1rem 2rem !important;
+            background-color: $secondary;
+            color: #fff !important;
+            border-radius: 10px !important;
+            text-decoration: none !important;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            color: #fff !important;
+            border-radius: 0px !important;
+        }
+    }
+
+    .wp-bootstrap-blocks-button {
+
+        .btn {
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            color: #fff !important;
+            border-radius: 0px !important;
+        }
+    }
+
+    .img-informativo {
+        img[class*="wp-image-"] {
+            width: 100%;
+        }
+    }
+}

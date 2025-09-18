@@ -1,0 +1,17 @@
+.page-numbers {
+    padding: 10px 12px;
+    background: $secondary;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+
+    &:hover {
+        background: shade-color($secondary, 30%);
+    }
+}
+
+.page-numbers.current {
+    background: $primary;
+}
+

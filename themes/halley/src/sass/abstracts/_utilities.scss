@@ -1,0 +1,178 @@
+.transition {
+    @include transition(all .3s ease);
+}
+
+.u-pointer{
+    cursor: pointer;
+}
+
+// padding
+.u-pt-5 {
+    padding-top: 5rem;
+}
+
+.u-pb-5 {
+    padding-bottom: 5rem;
+}
+
+.u-py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.u-py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+// hover
+.u-hover-translate-y-top {
+    @extend .transition;
+
+    @include media-breakpoint-up(xl) {
+        &:hover {
+            transform: translateY(-15%);
+        }
+    }
+}
+
+.u-hover-translate-y-top-2 {
+    @extend .transition;
+
+    @include media-breakpoint-up(xl) {
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.u-hover-scale-3x{
+    @extend .transition;
+    z-index: 1;
+
+    @include media-breakpoint-up(xl) {
+        &:hover {
+            transform: scale(1.3);
+            z-index: 100;
+        }
+    }
+}
+
+.u-hover-bg-degrade {
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(320deg, #3e39b4 7%, #792d6a 40%, #df6815 95%);
+        transition: opacity .5s ease-in-out;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+.u-hover-shadow {
+    @include media-breakpoint-up('xl') {
+
+        @include transition(all .1s linear);
+        &:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            transform: scale(1.01);
+        }
+    }
+}
+
+
+// gradient
+.u-hr-gradient {
+    margin: 0;
+    height: 10px;
+    background: linear-gradient(320deg, #3e39b4 7%, #792d6a 40%, #df6815 95%);
+    border: 0;
+    opacity: 1;
+}
+
+// outros
+.u-overflow-cards{
+    //@include media-breakpoint-down('lg'){
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    //}
+}
+
+.u-bloco-mensagem {
+    @extend .border-4, .border-start, .fw-bold, .ps-3;
+
+    &__primary {
+        @extend .border-primary, .text-primary;
+    }
+}
+
+.u-paragrafo-striped{
+
+    p,li{
+        padding: 1rem;
+        margin-bottom: 0;
+        border-bottom: 1px solid #ebe8e8;
+    }
+
+    p:nth-child(even),
+    li:nth-child(even){
+        background-color: $light;
+    }
+
+    li{
+        padding-left: 1rem!important;
+        margin-top: 0!important;
+    }
+
+    li:before{
+        display: none;
+    }
+}
+
+.u-striped{
+
+    &__item{
+        padding: 1rem 1rem 0 1rem;
+        margin-bottom: 0;
+        border-bottom: 2px solid $primary;
+
+        &:nth-child(even) {
+            background-color: $light;
+        }
+    }
+}
+
+.u-list-border {
+
+    &__item {
+        padding: 1rem 1rem .5rem 1rem;
+        margin-bottom: 1rem;
+        border-left: 5px solid $primary;
+        background-color: $light;
+        border-radius: 1rem;
+    }
+}
+
+.u-section-striped {
+
+    &__item:first-child{
+        padding-top: 0;
+    }
+
+    &__item:nth-child(even) {
+        background-color: $light;
+    }
+}

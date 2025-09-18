@@ -1,0 +1,158 @@
+// Abstracts
+@import 'vendors/animate';
+@import 'abstracts/variables';
+@import 'vendors/bootstrap';
+// @import 'abstracts/mixins';
+@import 'abstracts/fonts';
+@import 'abstracts/base';
+@import 'abstracts/utilities';
+
+
+// Components
+@import 'components/card';
+@import 'components/nav';
+@import 'components/page-header';
+@import 'components/breadcrumbs';
+@import 'components/pagination';
+
+
+// Layout
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/sobre';
+@import 'layouts/servico';
+@import 'layouts/avaliacao';
+
+*{
+  font-family: $font-family-base;
+  // color: $text-color;
+
+  p{
+    font-size: 18px;
+  }
+
+}
+
+.small{
+  font-size: .875rem !important;
+}
+
+#preload {
+    position: fixed;
+    z-index: 1000;
+    background: $light;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s ease, visibility .5s;
+
+    img{
+      animation-name: pulse;
+      animation-duration: .5s;
+      animation-iteration-count: infinite
+    }
+
+}
+
+.bg-gray{
+  background: $bg-gray
+}
+
+.img-cover{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bg-gradient{
+  background: $bg-gradient !important;
+}
+
+.text-degrade {
+  font-weight: bold;
+  background: linear-gradient(90deg, rgba(174, 111, 76, 1) 0%, rgba(214, 168, 128, 1) 100%);
+  -webkit-background-clip: text;  /* Aplica o fundo ao texto */
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o degradê */
+}
+
+.transition {
+    transition: all .3s ease-in-out;
+}
+
+.text-limit{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.l-featured-casos-clinicos{
+
+    &__container{
+
+        @extend .container;
+
+        @include media-breakpoint-up(xl){
+
+            max-width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__col-esquerda{
+
+        @include media-breakpoint-up('xl') {
+            width: 570px;
+        }
+
+        @include media-breakpoint-up('xxl'){
+            width: 660px;
+        }
+    }
+
+    .swiper-button-prev{
+        left: var(--swiper-navigation-sides-offset, 25px);
+
+        &:after{
+            @extend .rounded-2;
+        }
+    }
+
+    .swiper-button-next{
+        right: var(--swiper-navigation-sides-offset, 25px);
+
+        &:after {
+            @extend .rounded-2;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+
+        &:after{
+            --swiper-navigation-size: 2rem;
+
+            background-color: $primary;
+            padding: .8rem;
+            color: #fff;
+            @extend .transition;
+        }
+
+        &:hover{
+            &:after{
+                background-color: $primary;
+            }
+        }
+
+    }
+
+    .swiper-pagination-bullet-active{
+        --swiper-theme-color: #cda248;
+    }
+
+}

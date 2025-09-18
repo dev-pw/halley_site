@@ -1,0 +1,30 @@
+.c-page-header,
+.l-page-header {
+    background: linear-gradient(90deg, rgba(174, 111, 76, 1) 0%, rgba(214, 168, 128, 1) 100%);
+    padding: 3rem 0;
+    overflow: hidden;
+
+    .elementoLogo{
+        position: relative;
+
+        &::after, &::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: url('../../../../uploads/2025/08/icon-logo.svg') no-repeat center/cover;
+        }
+
+        &::after {
+            top: 0px;
+            right: 0px;
+        }
+
+        &::before {
+            bottom: 0px;
+            left: 0px;
+        }
+
+    }
+
+}

@@ -1,0 +1,58 @@
+#footer-site{
+    .footer-side{
+      background: $bg-gray;
+
+      .btn-telefone-footer{
+        font-family: $font-releway;
+        width: 303px;
+        height: 92px;
+        border-radius: 17px;
+        border: 1px solid $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 33px;
+        text-decoration: none;
+        color: $text-color;
+        font-weight: bolder;
+
+        &::after{
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          content: "";
+          position: absolute;
+          top: 25%;
+          z-index: 2;
+          left: -21px;
+          background: $bg-gradient;
+          font-size: 25px;
+          height: 45px;
+          width: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          color: #fff;
+        }
+      }
+    }
+    .footer-bottom{
+        background: $bg-gradient;
+
+        .btn-social-footer{
+          a{
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+          }
+        }
+
+
+    }
+}

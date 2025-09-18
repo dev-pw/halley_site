@@ -1,0 +1,20 @@
+{
+  "name": "Revista Córnea Brasil - SBC",
+  "host": "",
+  "protocol": "ftp",
+  "port": 21,
+  "username": "",
+  "password": "",
+  "remotePath": "/public_html/revistacorneabrasil/wp-content/themes/",
+  "context": "app",
+  "uploadOnSave": true,
+  "watcher": {
+    "files": "**/*.{css,css.map}",
+    "autoUpload": true,
+    "autoDelete": false
+  },
+  "ignore": [
+    "node_modules",
+    "package-lock.json"
+  ]
+}

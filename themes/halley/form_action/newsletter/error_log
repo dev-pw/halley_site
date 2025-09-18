@@ -1,0 +1,12 @@
+[19-Jun-2023 09:50:10 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/connection.php:8
+Stack trace:
+#0 /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/newsletter/inserir.php(7): include()
+#1 {main}
+  thrown in /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/connection.php on line 8
+[19-Jun-2023 09:52:00 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/connection.php:8
+Stack trace:
+#0 /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/newsletter/inserir.php(9): include()
+#1 {main}
+  thrown in /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/connection.php on line 8
+[19-Jun-2023 09:53:40 America/Sao_Paulo] PHP Notice:  Undefined index: nome in /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/newsletter/inserir.php on line 13
+[19-Jun-2023 09:53:40 America/Sao_Paulo] PHP Notice:  Undefined index: email in /home2/tudos945/visarerio.com.br/site/wp-content/themes/visarerio/form_action/newsletter/inserir.php on line 14

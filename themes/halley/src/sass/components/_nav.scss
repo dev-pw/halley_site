@@ -1,0 +1,195 @@
+.c-nav-toggle {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: none;
+    background: none;
+
+    &__line {
+        background: $bg-gradient;
+        height: 5px;
+        border-radius: 20px;
+        transition: all .3s ease;
+
+        &:nth-of-type(1) {
+            width: 100%;
+        }
+
+        &:nth-of-type(2) {
+            width: 65%;
+        }
+
+        &:nth-of-type(3) {
+            width: 30%;
+        }
+    }
+
+    &:hover {
+        span {
+            width: 100% !important;
+        }
+    }
+}
+
+.c-nav-menu-offcanvas{
+    >ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        >li.menu-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            width: 100%;
+            margin: 0;
+            padding: 1rem 0;
+            cursor: pointer;
+            position: relative;
+            background-color: transparent;
+            border-bottom: 1px solid rgba($primary, 0.07);
+            transition: background-color 300ms ease, all .3s linear;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                transition: all .3s linear;
+            }
+
+            &:before {
+                content: "\f111";
+                font-family: "Font Awesome 6 Free" !important;
+                color: $primary;
+                font-size: .8rem;
+                left: 15px;
+                top: 23px;
+                width: 15px;
+                height: 15px;
+            }
+
+            &:after {
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background-color: $primary;
+                z-index: -1;
+            }
+
+            >a {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: $primary;
+                padding-left: 40px;
+                text-decoration: none;
+                width: 100%;
+                transition: all .5s linear;
+            }
+
+            &:hover,
+            &.current-menu-item {
+                &:before {
+                    content: "\f111";
+                    color: $primary;
+                    font-weight: bold;
+                }
+
+                &:after {
+                    width: 100%;
+                }
+
+                >a {
+                    color: $primary;
+                }
+            }
+        }
+
+        li.menu-item-has-children {
+            flex-direction: column;
+            position: relative;
+
+            >a {
+                margin-right: 2rem;
+
+                &:after {
+                    content: "\f054";
+                    font-family: "Font Awesome 6 Free" !important;
+                    font-weight: bold;
+                    color: $primary;
+                    font-size: 1.5rem;
+                    position: absolute;
+                    right: 10px;
+                    top: 15px;
+                    transition: all .3s linear;
+                }
+            }
+
+            &:hover>a:after {
+                color: $primary;
+            }
+
+            &.active {
+                >a:after{
+                    color: $primary;
+                    transform: rotate(90deg);
+                }
+            }
+
+            ul.sub-menu {
+                display: block;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.8s ease;
+                padding-left: 0;
+
+                >li.menu-item {
+                    display: flex;
+                    flex-direction: column;
+                    //border-bottom: 2px solid rgba($white, 0.07);
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    >a {
+                        font-size: 1.2rem;
+                        color: $primary;
+                        padding: 16px 16px 0 42px;
+                        width: 100%;
+                        text-decoration: none;
+                        position: relative;
+                        transition: all .5s linear;
+                    }
+
+                    &.current-menu-item,
+                    &:hover>a {
+                        color: #02c400;
+                        //background-color: #012d50;
+                    }
+                }
+
+                // sub-menu de segundo nível
+                ul.sub-menu {
+                    >li.menu-item {
+                        a {
+                            padding-left: 70px;
+                        }
+                    }
+                }
+            }
+
+            &.active>ul.sub-menu {
+                max-height: 700px;
+
+                .menu-item-has-children.active ul.sub-menu {
+                    max-height: 700px;
+                }
+            }
+        }
+
+    }
+}
