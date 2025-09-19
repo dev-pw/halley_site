@@ -11345,6 +11345,12 @@ ul li::marker {
   min-height: 292px;
   width: 23%;
 }
+@media (max-width: 992px) {
+  .ft-conheca .col-lg-3 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+}
 
 * {
   font-family: "Outfit", sans-serif;
