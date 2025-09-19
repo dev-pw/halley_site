@@ -619,6 +619,10 @@ legend + * {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
+[type=search]::-webkit-search-cancel-button {
+  cursor: pointer;
+  filter: grayscale(1);
+}
 
 /* rtl:raw:
 [type="tel"],
@@ -664,12 +668,14 @@ progress {
 
 .lead {
   font-size: calc(1.265625rem + 0.1875vw);
-  font-weight: 300;
 }
 @media (min-width: 1200px) {
   .lead {
     font-size: 1.40625rem;
   }
+}
+.lead {
+  font-weight: 300;
 }
 
 .display-1 {
@@ -7407,12 +7413,14 @@ progress {
   min-height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
   padding: 0.5rem 1rem;
   font-size: calc(1.265625rem + 0.1875vw);
-  border-radius: var(--bs-border-radius-lg);
 }
 @media (min-width: 1200px) {
   .form-control-lg {
     font-size: 1.40625rem;
   }
+}
+.form-control-lg {
+  border-radius: var(--bs-border-radius-lg);
 }
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
@@ -7507,12 +7515,14 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   font-size: calc(1.265625rem + 0.1875vw);
-  border-radius: var(--bs-border-radius-lg);
 }
 @media (min-width: 1200px) {
   .form-select-lg {
     font-size: 1.40625rem;
   }
+}
+.form-select-lg {
+  border-radius: var(--bs-border-radius-lg);
 }
 
 [data-bs-theme=dark] .form-select {
@@ -7868,7 +7878,6 @@ textarea.form-control-lg {
 .entry-content-post .wp-block-file .input-group-lg > a {
   padding: 0.5rem 1rem;
   font-size: calc(1.265625rem + 0.1875vw);
-  border-radius: var(--bs-border-radius-lg);
 }
 @media (min-width: 1200px) {
   .input-group-lg > .form-control,
@@ -7878,6 +7887,13 @@ textarea.form-control-lg {
   .entry-content-post .wp-block-file .input-group-lg > a {
     font-size: 1.40625rem;
   }
+}
+.input-group-lg > .form-control,
+.input-group-lg > .form-select,
+.input-group-lg > .input-group-text,
+.input-group-lg > .btn,
+.entry-content-post .wp-block-file .input-group-lg > a {
+  border-radius: var(--bs-border-radius-lg);
 }
 
 .input-group-sm > .form-control,
@@ -8478,12 +8494,14 @@ textarea.form-control-lg {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: calc(1.265625rem + 0.1875vw);
-  --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 @media (min-width: 1200px) {
   .btn-lg {
     --bs-btn-font-size: 1.40625rem;
   }
+}
+.btn-lg {
+  --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
 .btn-sm {
@@ -9986,6 +10004,7 @@ textarea.form-control-lg {
 .spinner-grow,
 .spinner-border {
   display: inline-block;
+  flex-shrink: 0;
   width: var(--bs-spinner-width);
   height: var(--bs-spinner-height);
   vertical-align: var(--bs-spinner-vertical-align);
@@ -11322,8 +11341,9 @@ ul li::marker {
   font-family: "Raleway";
 }
 
-.section-avaliacao {
-  background: linear-gradient(90deg, rgb(174, 111, 76) 0%, rgb(214, 168, 128) 100%);
+.ft-conheca .col-lg-3 {
+  min-height: 292px;
+  width: 23%;
 }
 
 * {

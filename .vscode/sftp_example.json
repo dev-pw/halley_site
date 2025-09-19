@@ -7,10 +7,10 @@
   "password": "",
   "remotePath": "/public_html/revistacorneabrasil/wp-content/themes/",
   "context": "app",
-  "uploadOnSave": true,
+  "uploadOnSave": false,
   "watcher": {
     "files": "**/*.{css,css.map}",
-    "autoUpload": true,
+    "autoUpload": false,
     "autoDelete": false
   },
   "ignore": [
