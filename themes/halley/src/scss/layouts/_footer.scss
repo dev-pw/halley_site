@@ -8,7 +8,6 @@
 .rodape {
     background-color: $primary;
     font-family:  var(--fonte-principal);
-    
     color: var(--branco);
     
 }
@@ -16,7 +15,6 @@
 .rodape__links{
     display: flex;
     align-items: flex-start;
-   
     padding: 3em 8em;
     justify-content: space-between;
 
@@ -65,7 +63,6 @@
 
 footer {
     background-color: var(--cor-secudaria);
-    
 }
 
 

@@ -11443,6 +11443,17 @@ footer {
   }
 }
 
+.contato {
+  background-color: #002049;
+}
+
+.contato__topicos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 * {
   font-family: "Outfit", sans-serif;
 }
