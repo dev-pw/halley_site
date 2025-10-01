@@ -7,7 +7,7 @@
             Mooca • São Paulo - SP - 03106-030</p>
         </div>
         <div class="contato__dados">
-            <img src="<?php echo wp_get_attachment_url('36'); ?>" alt="">
+            <img src="<?php echo wp_get_attachment_url('38'); ?>" alt="">
             <h3 class="contato__titulo">Alô, como tá indo?</h3>
             <p class="contato__texto">+55 11 5034 5555 <br>
             +55 11 2271 0030</p>

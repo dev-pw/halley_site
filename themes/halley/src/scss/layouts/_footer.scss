@@ -1,14 +1,7 @@
-:root{
-    --cor-primaria: #002049;
-    --cor-secudaria: #FF272B;
-    --branco: #ffffff;
-    --fonte-principal: "Outfit";
-} 
-
 .rodape {
     background-color: $primary;
-    font-family:  var(--fonte-principal);
-    color: var(--branco);
+    font-family:  $font-family-sans-serif;
+    color: white;
     
 }
 
@@ -20,7 +13,6 @@
 
      img {
       max-width: 250px;
-      
      }
 
      ul{
@@ -54,15 +46,21 @@
     margin-bottom: 1.5em;
 }
 
-
-
 .rodape_topicos_links a{
     text-decoration: none;
     color: var(--branco);
+    transition: 0.2s;
+}
+
+.rodape_topicos_links{
+    a:hover {
+    font-weight: 500;
+    transition: 0.2s;
+    }
 }
 
 footer {
-    background-color: var(--cor-secudaria);
+    background-color: $secondary;
 }
 
 
@@ -74,22 +72,29 @@ footer {
     justify-content: space-between;
 
     a{
-    border: 1px solid white;
-    width: 33px;
-    height: 33px;
-    display: inline-flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    flex-direction: row;
-    color: white;
+        border: 1px solid white;
+        width: 33px;
+        height: 33px;
+        display: inline-flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        flex-direction: row;
+        color: white;
+        transition: 0.2s;
     }
+
+    a:hover{
+        color: $secondary;
+        background-color: white;
+    }
+    
 }
 
 
 .footer__container{
-    color: var(--branco);
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -111,8 +116,22 @@ footer {
     min-width: 180px;
     display: flex;
     justify-content: flex-end;
+
+    a:hover{
+        animation: pulse 0.5s infinite ease-in-out;
+    }
 }
 
+
+
+
+@media (max-width: 1024px) {
+    .rodape__links{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+}
 
 
 @media (max-width: 768px) {
