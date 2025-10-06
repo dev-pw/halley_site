@@ -10,8 +10,8 @@ services:
       - ./server/vendor:/var/www/html/vendor
       - ./server/php.ini:/usr/local/etc/php/php.ini
       - ./server/wp-config.php:/var/www/html/wp-config.php
-      - ./uploads:/var/www/html/wp-content/uploads/
-      - ./plugins:/var/www/html/wp-content/plugins/
+      - ./server/plugins:/var/www/html/wp-content/plugins/
+      - ./server/uploads:/var/www/html/wp-content/uploads/
       - ./themes/halley:/var/www/html/wp-content/themes/halley/
     environment:
       WORDPRESS_LOCALE: pt_BR

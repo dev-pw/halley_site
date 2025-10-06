@@ -7,14 +7,13 @@ $bg-gray: #F5F5F5;
 $light: #f7f7f7;
 $bg-gradient: linear-gradient(90deg, rgba(174, 111, 76, 1) 0%, rgba(214, 168, 128, 1) 100%);
 $font-family-sans-serif: 'Outfit';
-$font-releway: 'Raleway';
 $text-color: #004143;
 
 // CAMINHO DA PASTA UPLOADS WP
 $assetPath: "../../../../../wp-content/uploads";
 
 // BASE
-$font-family-base: "Outfit",sans-serif;
+$font-family-base: "Outfit", sans-serif;
 $font-size-base: 1.125rem; // 16px
 $body-color: #4d4d4d;
 
@@ -48,7 +47,7 @@ $display-font-sizes: (
 // BUTTONS
 $btn-padding-y: .8rem;
 $btn-padding-x: 2rem;
-$btn-font-family: $font-releway;
+$btn-font-family: $font-family-base;
 $btn-font-size: 1rem;
 $btn-line-height: 1;
 $btn-white-space: nowrap;

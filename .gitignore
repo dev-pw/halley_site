@@ -1,8 +1,8 @@
 .vscode/sftp.json
 node_modules
 package-lock.json
-/plugins/
-/uploads/
+server/plugins/
+server/uploads/
 server/vendor
 composer.lock
 .env

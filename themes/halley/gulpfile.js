@@ -9,7 +9,7 @@ const paths = {
     scss: {
         src: ['./src/scss/*.scss', '!./src/scss/**/_*.scss'], // Somente arquivos principais
         watch: './src/scss/**/*.scss',                         // Observa todos, incluindo parciais
-        dest: './dist/css'                                   // Pasta de saída
+        dest: './assets/css'                                   // Pasta de saída
     }
 };
 

@@ -1,11 +1,11 @@
 {
-  "name": "Revista Córnea Brasil - SBC",
+  "name": "Halley",
   "host": "",
   "protocol": "ftp",
   "port": 21,
   "username": "",
   "password": "",
-  "remotePath": "/public_html/revistacorneabrasil/wp-content/themes/",
+  "remotePath": "/public_html/site/wp-content/themes/",
   "context": "app",
   "uploadOnSave": false,
   "watcher": {

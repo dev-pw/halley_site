@@ -11,8 +11,8 @@ function enqueue_scripts() {
 	$tema_version = $data_hora_atual;
 
 	//BOOTSTRAP JS
-	wp_enqueue_script( 'bootstrap-poppers', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js', array('jquery'), $tema_version, true );
-	wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js', array('jquery'), $tema_version, true );
+	wp_enqueue_script( 'bootstrap-poppers', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/assets/umd/popper.min.js', array('jquery'), $tema_version, true );
+	wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/assets/js/bootstrap.min.js', array('jquery'), $tema_version, true );
 
 	// Swipper
 	wp_enqueue_style('swipper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), $tema_version, 'all');
@@ -33,19 +33,16 @@ function enqueue_scripts() {
 	//wp_enqueue_style('animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css', array(), $tema_version, 'all');
 
 	//STYLE THEME
-	//wp_enqueue_style('tema', get_template_directory_uri().'/assets/css/theme.css', array(), $tema_version, 'all');
-
-	//STYLE THEME APP
-	wp_enqueue_style('tema-app', get_template_directory_uri().'/dist/css/theme.css', array(), $tema_version, 'all');
+	wp_enqueue_style('tema', get_template_directory_uri().'/assets/css/theme.min.css', array(), $tema_version, 'all');
 
     //CSS DEFAULT
 	wp_enqueue_style('default-style', get_stylesheet_uri(), array(), $tema_version, 'all');
 
 	//SCRIPT THEME JS
-	wp_enqueue_script( 'tema-js', get_template_directory_uri().'/dist/js/theme.js', array('jquery'), $tema_version, true );
+	wp_enqueue_script( 'tema-js', get_template_directory_uri().'/assets/js/theme.js', array('jquery'), $tema_version, true );
 
 	// FORMS JS
-	// wp_enqueue_script( 'forms-js', get_template_directory_uri().'/dist/js/forms.js', array('jquery'), $tema_version, true );
+	// wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
 
 	//SCRIPT FORMS JS
 	//wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
@@ -80,4 +77,5 @@ function setup_theme() {
 add_action( 'after_setup_theme', 'setup_theme' );
 
 include 'inc/default.php';
+
 ?>
