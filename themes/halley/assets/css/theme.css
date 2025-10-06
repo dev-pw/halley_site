@@ -11165,7 +11165,7 @@ ul li::marker {
 .l-header-site__sticky {
   padding: 10px 16px;
   position: fixed !important;
-  background-color: #FBF4F0;
+  background-color: #FFFFFF;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
