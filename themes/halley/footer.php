@@ -9,6 +9,8 @@
                 <li class="rodape_topicos_links"><a href="#">Logística</a></li>
                 <li class="rodape_topicos_links"><a href="#">Somos Halley</a></li>
             </ul>
+            
+            
 
             <ul class="rodape__sobre2">
                 <h3 class="rodape__topico">Principais Serviços</h3>
@@ -16,6 +18,8 @@
                 <li class="rodape_topicos_links"><a href="#">Transporte de Produtos Farmacêuticos</a></li>
                 <li class="rodape_topicos_links"><a href="#">Transporte de Carga Seca</a></li>
             </ul>
+
+            
 
             <ul class="rodape__sobre">
                 <h3 class="rodape__topico">Horário de Funcionamento</h3>
