@@ -11462,6 +11462,15 @@ footer {
   font-size: 18px;
 }
 
+.s-mapa-contato iframe {
+  height: 450px;
+}
+@media (min-width: 992px) {
+  .s-mapa-contato iframe {
+    height: 100%;
+  }
+}
+
 .small, #breadcrumbs {
   font-size: 0.875rem !important;
 }

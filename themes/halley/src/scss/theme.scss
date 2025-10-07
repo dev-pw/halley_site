@@ -34,6 +34,17 @@
 
 }
 
+.s-mapa-contato{
+
+    iframe{
+        height: 450px;
+        
+        @include media-breakpoint-up('lg') {
+            height: 100%;
+        }
+    }
+}
+
 .small{
   font-size: .875rem !important;
 }
