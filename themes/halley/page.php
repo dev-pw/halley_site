@@ -1,38 +1,31 @@
-<!-- PAGE -->
+<?php
+/**
+ * Page default
+ * @package WordPress
+ * @subpackage halley-site
+ *
+*/
 
-<?php get_header(); ?>
+get_header(); ?>
 
-<main>
-  <section class="page-title">
-    <div class="container">
-      <h1>
-        <?php the_title(); ?>
-      </h1>
-    </div>
-  </section>
+ <main role="main">
+ 
+    <?= get_template_part('template-parts/c-page-header'); ?>
 
-  <!-- SEÇÃO -->
-  <section class="page-interna">
-    <div class="container">
-      <div class="row">
+    <div class="pt-5 u-pb-5">
+        <div class="container">
 
-        <div class="col-lg-12">
-          
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-               <?php the_content(); ?>
-            <?php endwhile; else: ?>
-               <p> <?php _e('Sorry, this page does not exist.'); ?> </p>
-            <?php endif; ?>
+            <?php if (have_posts()):while (have_posts()):the_post(); ?>
+            <article id="article-id-<?php the_id(); ?>" <?php post_class(); ?>>
+                <div class="entry-content-post">
+                    <?php the_content(); ?>
+                </div>
+            </article>
+            <?php endwhile; endif; ?>
 
-         </div>
-
-      </div>
-
+        </div>
     </div>
 
-    </div>
-  </section>
-
-</main>
-
-<?php get_footer(); ?>
+ </main>
+ 
+ <?php get_footer(); ?>
