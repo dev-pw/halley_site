@@ -93,6 +93,24 @@ footer {
 }
 
 
+footer{
+.btn-rs-white{
+
+  a{
+
+    &:hover{
+        background: $white;
+        color: $secondary;
+    }
+
+  }
+
+}
+}
+
+
+
+
 
 
 .footer__container{
@@ -115,7 +133,7 @@ footer {
 }
 
 .footer__planeta {
-    min-width: 180px;
+    min-width: 121px;
     display: flex;
     justify-content: flex-end;
 
