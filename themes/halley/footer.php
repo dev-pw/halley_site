@@ -50,11 +50,7 @@
 
     <div class="bg-secondary py-4">
         <div class="container">
-<<<<<<< HEAD
-            <div class="d-flex justify-content-lg-between justify-content-center align-items-center flex-wrap">
-=======
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
->>>>>>> 98b13085a989ccf89b6caea6b578a5debcaa345e
                 <div class="btn-rs-white">
                     <?= get_template_part('template-parts/c-redes-sociais'); ?>
                 </div>
