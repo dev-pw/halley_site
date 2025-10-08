@@ -93,6 +93,24 @@ footer {
 }
 
 
+footer{
+.btn-rs-white{
+
+  a{
+
+    &:hover{
+        background: $white;
+        color: $secondary;
+    }
+
+  }
+
+}
+}
+
+
+
+
 
 
 .footer__container{
