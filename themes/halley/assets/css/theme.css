@@ -11301,6 +11301,11 @@ footer {
   background-color: white;
 }
 
+footer .btn-rs-white a:hover {
+  background: #fff;
+  color: #FF272B;
+}
+
 .footer__container {
   color: white;
   display: flex;
@@ -11321,7 +11326,7 @@ footer {
 }
 
 .footer__planeta {
-  min-width: 180px;
+  min-width: 121px;
   display: flex;
   justify-content: flex-end;
 }
@@ -11460,6 +11465,15 @@ footer {
 }
 * p {
   font-size: 18px;
+}
+
+.s-mapa-contato iframe {
+  height: 450px;
+}
+@media (min-width: 992px) {
+  .s-mapa-contato iframe {
+    height: 100%;
+  }
 }
 
 .small, #breadcrumbs {
