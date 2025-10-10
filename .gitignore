@@ -3,6 +3,8 @@ node_modules
 package-lock.json
 server/plugins/
 server/uploads/
+plugins/
+uploads/
 server/vendor
 composer.lock
 .env
