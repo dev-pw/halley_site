@@ -263,11 +263,6 @@ function cp_info_3() {
     echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: (11) 4002-8922">';
 }
 
-function cp_info_7() {
-    $name = 'options_info_7';
-    echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: (11) 4002-8922">';
-}
-
 function cp_info_4() {
     $name = 'options_info_4';
     echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: https://maps.app.goo.gl/kqTLb5qrZ13FEeKZ6">';
@@ -281,6 +276,11 @@ function cp_info_5() {
 function cp_info_6() {
     $name = 'options_info_6';
     echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: https://www.waze.com/pt-PT/live-map/directions/google-brasil-av.-brigadeiro-faria-lima-3477-sao-paulo?to=place.w.205325852.2053389593.3483233">';
+}
+
+function cp_info_7() {
+    $name = 'options_info_7';
+    echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: (11) 4002-8922">';
 }
 
 
