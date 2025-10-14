@@ -32,7 +32,7 @@ $blog = new WP_Query($args);
         <div class="row gy-4 mt-4">
 
             <?php if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post(); 
-            $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 59;
+            
             ?>
 
             <div class="col-lg-4">

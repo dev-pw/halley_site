@@ -11,6 +11,7 @@ REMOVER CATEGORY / TAG / AUTHOR EM ARCHIVE TITLE (EX: Arquivos: Agenda)
 PAGINAÇÃO COM NÚMEROS
 SVG UPLOADS
 SEGURANÇA
+OPÇÔES DO SITE
 
 --------------------------------------------------------------*/
 
@@ -209,5 +210,11 @@ add_filter(
     10,
     5
 );
+
+
+/*--------------------------------------------------------------
+Opções do Site
+--------------------------------------------------------------*/
+get_template_part('inc/options/index');
 
 ?>
