@@ -14,7 +14,7 @@
   get_template_part("template-parts/ft-conheca");
   get_template_part("template-parts/ft-indo-bem");
   get_template_part("template-parts/ft-blog");
-  get_template_part("template-parts/ft-orcamento");
+  get_template_part("template-parts/ft-cta");
   get_template_part("template-parts/ft-certificados");
   get_template_part("template-parts/ft-depoimentos");
   get_template_part("template-parts/ft-news");

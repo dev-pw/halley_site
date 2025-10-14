@@ -29,6 +29,42 @@
   }
 }
 
+.cta{
+
+  @media (min-width: 992px) and (max-width: 1399px) {
+    max-width: initial !important;
+  }
+
+  @include media-breakpoint-up('xxl') {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__px{
+
+    @include media-breakpoint-down('md'){
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    @include media-breakpoint-up('lg'){
+      padding-left: 90px !important;
+    }
+
+  }
+
+  &__img{
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 400px;
+  }
+
+}
+
+
 .section-servico{
   position: relative;
 

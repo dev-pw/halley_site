@@ -17,6 +17,8 @@ $rota_waze = get_option('options_info_6');
 
 $telefone = get_option('options_info_3');
 $tel_url = str_replace(array('(', ')', '-', ' '), '', $telefone);
+$telefone2 = get_option('options_info_7');
+$tel_url2 = str_replace(array('(', ')', '-', ' '), '', $telefone2);
 $whatsapp = get_option('options_rs_5');
 $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
 
@@ -34,8 +36,8 @@ $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
                     <div class="border border-4 border-primary bg-light rounded p-4 d-flex flex-column text-center align-items-center h-100">
                         <span class="fs-2 icon-location_on mb-3 text-primary"></span>
                         <h2 class="h5 mb-3 text-primary">Ponto de Partida</h2>
-                        <a class="text-decoration-none small" href="<?= $maps; ?>" target="_blank" title="Localização"><?= $endereco; ?></a>
-                        <div class="row gx-2 gx-md-4 mt-2">
+                        <a class="text-decoration-none small col-lg-9" href="<?= $maps; ?>" target="_blank" title="Localização"><?= $endereco; ?></a>
+                        <div class="row gx-2 gx-md-4 mt-4">
                             <div class="col-6">
                                 <a class="btn btn-primary px-4" href="<?= $rota_maps; ?>" target="_blank" title="Como chegar pelo Google Maps">Maps</a>
                             </div>
@@ -55,6 +57,9 @@ $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
                         </div>
                         <div>
                             <a href="tel:+55<?= $tel_url; ?>" class="text-decoration-none small"><span class="icon-call text-primary me-2"></span><?= $telefone; ?></a>
+                        </div>
+                        <div>
+                            <a href="tel:+55<?= $tel_url2; ?>" class="text-decoration-none small"><span class="icon-call text-primary me-2"></span><?= $telefone2; ?></a>
                         </div>
                     </div>
                 </div>

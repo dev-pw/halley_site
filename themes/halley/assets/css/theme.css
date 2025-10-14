@@ -11256,6 +11256,37 @@ ul li::marker {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1399px) {
+  .cta {
+    max-width: initial !important;
+  }
+}
+@media (min-width: 1400px) {
+  .cta {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767.98px) {
+  .cta__px {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .cta__px {
+    padding-left: 90px !important;
+  }
+}
+.cta__img {
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 400px;
+}
+
 .section-servico {
   position: relative;
 }

@@ -10,6 +10,7 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 59;
 
     <div class="text-secondary small mb-3">
         <span> <?= get_the_date('d \d\e m, Y'); ?> </span>
+        <span> <?= the_category(); ?> </span>
     </div>
     
     <h2 class="h5">
