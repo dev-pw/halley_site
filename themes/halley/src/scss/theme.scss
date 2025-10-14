@@ -19,10 +19,7 @@
 // Layout
 @import 'layouts/header';
 @import 'layouts/footer';
-@import 'layouts/sobre';
-@import 'layouts/servico';
-@import 'layouts/dados-contato';
-@import 'layouts/certificacoes';
+@import 'layouts/page';
 
 *{
   font-family: $font-family-base;

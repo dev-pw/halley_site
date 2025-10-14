@@ -1,4 +1,4 @@
-<section class="contato u-py-5">
+<section class="u-py-5">
     <div class="container">
         <div class="row justify-content-between gy-4">
             <div class="col-md-6 col-lg-3 text-center ">

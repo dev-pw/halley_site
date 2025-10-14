@@ -57,7 +57,7 @@ ini_set('display_errors', 'on');
                <div class="row align-items-center justify-content-end gx-3">
 
                   <div class="col-auto d-none d-lg-block">
-                     <a href="https://wa.me/55" class="btn btn-secondary text-white"> Fale conosco </a>
+                     <a href="<?= the_permalink(53); ?>" class="btn btn-secondary text-white"> Fale conosco </a>
                   </div>
 
                   <div class="col-auto s-nav-toggle">

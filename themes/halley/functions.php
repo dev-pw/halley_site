@@ -11,16 +11,12 @@ function enqueue_scripts() {
 	$tema_version = $data_hora_atual;
 
 	//BOOTSTRAP JS
-	wp_enqueue_script( 'bootstrap-poppers', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/assets/umd/popper.min.js', array('jquery'), $tema_version, true );
+	// wp_enqueue_script( 'bootstrap-poppers', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/assets/umd/popper.min.js', array('jquery'), $tema_version, true );
 	wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/assets/js/bootstrap.min.js', array('jquery'), $tema_version, true );
 
 	// Swipper
 	wp_enqueue_style('swipper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), $tema_version, 'all');
 	wp_enqueue_script( 'swipper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array('jquery'), $tema_version, true );
-
-
-	//BIBLIOTECA DE FONTS
-	//wp_enqueue_style( 'fonts', get_template_directory_uri().'/fonts/font.css', array(), $tema_version, 'all' );
 
 	//FONTAWESOME
 	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/ac0d7d3790.js', array('jquery'), $tema_version, true );
@@ -42,10 +38,8 @@ function enqueue_scripts() {
 	wp_enqueue_script( 'tema-js', get_template_directory_uri().'/assets/js/theme.js', array('jquery'), $tema_version, true );
 
 	// FORMS JS
-	// wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
+	wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
 
-	//SCRIPT FORMS JS
-	//wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts');

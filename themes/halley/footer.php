@@ -49,12 +49,12 @@
     
 
     <div class="bg-secondary py-4">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <div class="container position-relative z-1">
+            <div class="d-flex gap-4 flex-column flex-lg-row justify-content-between align-items-center text-center text-md-start">
                 <div class="btn-rs-white">
                     <?= get_template_part('template-parts/c-redes-sociais'); ?>
                 </div>
-                <p class="text-white text-center my-3 my-md-0">© Copyright Halley - Todos os direitos reservados</p>
+                <p class="text-white text-center my-3 my-md-0 position-lg-absolute">© Copyright Halley - Todos os direitos reservados</p>
                 <div class="footer__planeta">
                     <a href="https://planetaw.ag" target="_blank" rel="noopener noreferrer" title="Planeta W">
                         <img src="<?= wp_get_attachment_url('34'); ?>" alt="Logo Planeta">
