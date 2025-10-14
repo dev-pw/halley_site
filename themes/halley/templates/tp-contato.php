@@ -9,16 +9,16 @@
 
 get_header();
 
+$email = get_option('options_info_1');
 $endereco = get_option('options_info_2');
 $maps = get_option('options_info_4');
-$iframe_maps = get_option('options_info_9');
 $rota_maps = get_option('options_info_5');
 $rota_waze = get_option('options_info_6');
+
 $telefone = get_option('options_info_3');
 $tel_url = str_replace(array('(', ')', '-', ' '), '', $telefone);
-$whatsapp = get_option('options_info_7');
-$whats_url = get_option('options_info_8');
-$email = get_option('options_info_1');
+$whatsapp = get_option('options_rs_5');
+$whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
 
 ?>
 
@@ -51,7 +51,7 @@ $email = get_option('options_info_1');
                         <span class="fs-2 icon-call mb-3 text-primary"></span>
                         <h2 class="h5 mb-3 text-primary">Fale Conosco</h2>
                         <div>
-                            <a href="<?= $whats_url; ?>" class="text-decoration-none mb-2 small" target="_blank"><span class="icon-whatsapp text-primary me-2"></span><?= $whatsapp; ?></a>
+                            <a href="https://wa.me/55<?= $whats_url; ?>" class="text-decoration-none mb-2 small" target="_blank"><span class="icon-whatsapp text-primary me-2"></span><?= $whatsapp; ?></a>
                         </div>
                         <div>
                             <a href="tel:+55<?= $tel_url; ?>" class="text-decoration-none small"><span class="icon-call text-primary me-2"></span><?= $telefone; ?></a>
@@ -78,7 +78,7 @@ $email = get_option('options_info_1');
                 <div class="col-xl-7">
                     <article class="p-xl-5 px-3 py-4">
                         <h2 class="h5 mb-3 text-primary">Formulário de Contato</h2>
-                        <form class="forms-contato form_contato" data-action-caminho="<?php echo get_template_directory_uri() ?>" data-action="contato/inserir" method="POST">
+                        <form class="forms-contato form_contato" data-action-caminho="<?= get_template_directory_uri() ?>" data-action="contato/inserir" method="POST">
                             <div class="row g-2">
                                 <div class="col-xl-12">
                                     <div class="form-floating mb-3">

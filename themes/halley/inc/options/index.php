@@ -86,6 +86,7 @@ function options_theme() {
         'Email' => array('options_info_1', 'cp_info_1', 'info', 'info'),
         'Endereço' => array('options_info_2', 'cp_info_2', 'info', 'info'),
         'Telefone' => array('options_info_3', 'cp_info_3', 'info', 'info'),
+        'Telefone 02' => array('options_info_7', 'cp_info_7', 'info', 'info'),
         'Link Google' => array('options_info_4', 'cp_info_4', 'info', 'info'),
         'Rota Maps' => array('options_info_5', 'cp_info_5', 'info', 'info'),
         'Rota Waze' => array('options_info_6', 'cp_info_6', 'info', 'info'),
@@ -259,6 +260,11 @@ function cp_info_2() {
 
 function cp_info_3() {
     $name = 'options_info_3';
+    echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: (11) 4002-8922">';
+}
+
+function cp_info_7() {
+    $name = 'options_info_7';
     echo '<input type="text" name="'.$name.'" value="'.esc_attr( get_option( $name ) ).'" placeholder="Exemplo: (11) 4002-8922">';
 }
 

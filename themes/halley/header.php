@@ -77,13 +77,18 @@ ini_set('display_errors', 'on');
    </header>
 
    <!-- MENU OFFCANVAS -->
-   <div class="bg-light w-100 c-nav-offcanvas offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="menuoffcanvasLabel">
+   <div class="bg-light c-nav-offcanvas offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="menuoffcanvasLabel">
 
       <div class="offcanvas-header px-0">
          <div class="container topbar-container">
-            <div class="align-items-center justify-content-end row">
+            <div class="justify-content-between row">
+               <div class="col-10 col-md-7">
+                  <a href="<?= bloginfo('url'); ?>" title="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>">
+                     <img src="<?= $logo_menu; ?>" alt="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>" class="w-100">
+                  </a>
+               </div>
                <div class="col-auto">
-                  <button type="button" class="border-0 ms-auto text-primary bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"> <i class="fa-solid fa-xmark fs-1"></i> </button>
+                  <button type="button" class="border-0 ms-auto text-primary bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"> <i class="fa-solid fa-xmark fs-3"></i> </button>
                </div>
             </div>
          </div>
@@ -92,27 +97,16 @@ ini_set('display_errors', 'on');
       <div class="offcanvas-body px-0">
          <div class="container">
 
-            <div class="row mb-5">
-               <div class="col-10 col-md-7 col-lg-5 mx-auto text-center">
-                  <a href="">
-                     <img src="" alt="">
-                  </a>
-               </div>
-            </div>
-
             <div class="row gy-5 justify-content-center">
 
                <div class="col-12 p-0">
+                  <?= get_template_part('template-parts/c-menu-principal'); ?>
                </div>
 
                <div class="col-12">
                   <div class="gy-4 justify-content-center row btn-rs d-lg-none">
-
+                     <?= get_template_part('template-parts/c-redes-sociais'); ?>
                   </div>
-               </div>
-
-               <div class="col-12 text-center d-lg-none">
-                  <a href="https://wa.me/55" class="btn-orcamento" target="_blank">solicitar orçamento</a>
                </div>
 
             </div>
