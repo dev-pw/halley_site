@@ -16,7 +16,7 @@ ini_set('display_errors', 'on');
 ?>
 
 <!DOCTYPE html>
-<html class="no-js" lang="<?= language_attributes(); ?>">
+<html class="no-js" <?= language_attributes(); ?>>
 
 <head>
 
@@ -99,7 +99,7 @@ ini_set('display_errors', 'on');
 
             <div class="row gy-5 justify-content-center">
 
-               <div class="col-12 p-0">
+               <div id="js-navigation-menu" class="col-12 p-0">
                   <?= get_template_part('template-parts/c-menu-principal'); ?>
                </div>
 

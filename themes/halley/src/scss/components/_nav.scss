@@ -140,11 +140,11 @@
             }
 
             ul.sub-menu {
-                display: block;
-                max-height: 0;
+                display: none;
                 overflow: hidden;
                 transition: max-height 0.8s ease;
                 padding-left: 0;
+                // max-height: 0;
 
                 >li.menu-item {
                     display: flex;
