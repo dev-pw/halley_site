@@ -3,7 +3,7 @@
 
     <section class="bg-primary u-py-5">
         <div class="container">
-            <div class="row justify-content-between gy-4 align-items-center align-items-lg-start text-center text-xl-start">
+            <div class="row justify-content-between gy-4 text-center text-md-start">
 
                 <div class="col-md-6 col-lg-3">
                     <img src="<?php echo wp_get_attachment_url('33'); ?>" alt="" class="img-fluid">
