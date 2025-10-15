@@ -90,11 +90,11 @@
                 transition: all .5s linear;
             }
 
-            &:hover,
+            &:hover, &.active,
             &.current-menu-item {
                 &:before {
                     content: "\f111";
-                    color: $primary;
+                    color: $secondary;
                     font-weight: bold;
                 }
 
@@ -103,7 +103,7 @@
                 }
 
                 >a {
-                    color: $primary;
+                    color: $secondary;
                 }
             }
         }
@@ -167,7 +167,7 @@
 
                     &.current-menu-item,
                     &:hover>a {
-                        color: #02c400;
+                        color: $secondary;
                         //background-color: #012d50;
                     }
                 }

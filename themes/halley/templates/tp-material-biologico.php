@@ -23,6 +23,7 @@ get_header();
                 <div class="entry-content-post">
                     <?= the_content(); ?>
                 </div>
+
                 <p class="mb-5 text-center">A Halley está autorizada e capacitada para o transporte de materiais biológicos de alta
                     complexidade. Geralmente são materiais para exames médicos, análises clínicas ou pesquisas
                     científicas. Externamente, a caixa branca é o aspecto que se destaca. Mas a grande diferença
@@ -30,7 +31,7 @@ get_header();
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-4">
+                    <div class="col-md-6 mx-auto col-lg-4">
                         <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(87, 'full')[0]; ?>" alt="<?= get_post(87)->post_title; ?>">
                     </div>
 
@@ -64,15 +65,16 @@ get_header();
                 <h2 class="text-white mb-4 text-center">Cuidados Especiais</h2>
                 <p class="text-white text-center">A preparação dos itens começa na retirada e passa por uma rígida conferência entre produto e notas fiscais. Após esse processo, separamos as embalagens, checamos volume, peso e dimensões, fotografamos e enviamos todo o material para o cliente acompanhar.</p>
 
-                <div class="row mt-5">
-                    <div class="col-lg-3 mb-4">
+                <div class="row gy-4 mt-5">
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-star fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Certificações sanitárias, incluindo Anvisa.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-square-check fs-1 text-secondary mb-3"></i>
@@ -80,7 +82,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-boxes-stacked fs-1 text-secondary mb-3"></i>
@@ -88,7 +90,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-tower-cell fs-1 text-secondary mb-3"></i>
@@ -96,7 +98,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-snowflake fs-1 text-secondary mb-3"></i>
@@ -104,7 +106,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-temperature-low fs-1 text-secondary mb-3"></i>
@@ -112,7 +114,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-user-lock fs-1 text-secondary mb-3"></i>
@@ -120,7 +122,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-calendar-check fs-1 text-secondary mb-3"></i>
@@ -136,41 +138,41 @@ get_header();
 
         <div class="container">
             <h2 class="text-center text-primary mb-5">Nosso Trabalho é a Sua Tranquilidade</h2>
-            <div class="row">
-                <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('97'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-4">
+                    <img src="<?= wp_get_attachment_url('97'); ?>" class="w-100 rounded-4" alt="<?= get_post(97)->post_title;?>">
+                    <p class="h5 mt-3 text-center text-primary">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('96'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                <div class="col-md-6 col-lg-4">
+                    <img src="<?= wp_get_attachment_url('96'); ?>" class="w-100 rounded-4" alt="<?= get_post(96)->post_title;?>">
+                    <p class="h5 mt-3 text-center text-primary">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('95'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                <div class="col-md-6 col-lg-4">
+                    <img src="<?= wp_get_attachment_url('95'); ?>" class="w-100 rounded-4" alt="<?= get_post(95)->post_title;?>">
+                    <p class="h5 mt-3 text-center text-primary">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('94'); ?>" alt="">
-                    <p class="text-center">Empresa top of business 2015</p>
+                <div class="col-md-6 col-lg-4">
+                    <img src="<?= wp_get_attachment_url('94'); ?>" class="w-100 rounded-4" alt="<?= get_post(94)->post_title;?>">
+                    <p class="h5 mt-3 text-center text-primary">Empresa top of business 2015</p>
                 </div>
 
-                <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('93'); ?>" alt="">
-                    <p class="text-center">Logística hospitalar</p>
+                <div class="col-md-6 col-lg-4">
+                    <img src="<?= wp_get_attachment_url('93'); ?>" class="w-100 rounded-4" alt="<?= get_post(93)->post_title;?>">
+                    <p class="h5 mt-3 text-center text-primary">Logística hospitalar</p>
                 </div>
 
-                <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('92'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                <div class="col-md-6 col-lg-4">
+                    <img src="<?= wp_get_attachment_url('92'); ?>" class="w-100 rounded-4" alt="<?= get_post(92)->post_title;?>">
+                    <p class="h5 mt-3 text-center text-primary">Armazenagem de medicamentos anvisa</p>
                 </div>
 
                 <div class="col-lg-12 d-none">
-                    <p class="text-center">"A partir do momento em que a gente lida com algo de alta complexidade como material biológico, todas as outras tarefas se tornam mais simples."</p>
+                    <p class="h5 mt-3 text-center text-primary">"A partir do momento em que a gente lida com algo de alta complexidade como material biológico, todas as outras tarefas se tornam mais simples."</p>
                     <div>
-                        <img src="<?php echo wp_get_attachment_url('98'); ?>" alt="">
+                        <img src="<?= wp_get_attachment_url('98'); ?>" alt="">
                         <div>
                             <p>RODOLFO LOPEZ</p>
                             <span>Farmacêutico</span>

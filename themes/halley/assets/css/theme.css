@@ -11026,16 +11026,16 @@ ul li::marker {
   width: 100%;
   transition: all 0.5s linear;
 }
-.c-nav-menu-offcanvas > ul > li.menu-item:hover:before, .c-nav-menu-offcanvas > ul > li.menu-item.current-menu-item:before {
+.c-nav-menu-offcanvas > ul > li.menu-item:hover:before, .c-nav-menu-offcanvas > ul > li.menu-item.active:before, .c-nav-menu-offcanvas > ul > li.menu-item.current-menu-item:before {
   content: "\f111";
-  color: #002049;
+  color: #FF272B;
   font-weight: bold;
 }
-.c-nav-menu-offcanvas > ul > li.menu-item:hover:after, .c-nav-menu-offcanvas > ul > li.menu-item.current-menu-item:after {
+.c-nav-menu-offcanvas > ul > li.menu-item:hover:after, .c-nav-menu-offcanvas > ul > li.menu-item.active:after, .c-nav-menu-offcanvas > ul > li.menu-item.current-menu-item:after {
   width: 100%;
 }
-.c-nav-menu-offcanvas > ul > li.menu-item:hover > a, .c-nav-menu-offcanvas > ul > li.menu-item.current-menu-item > a {
-  color: #002049;
+.c-nav-menu-offcanvas > ul > li.menu-item:hover > a, .c-nav-menu-offcanvas > ul > li.menu-item.active > a, .c-nav-menu-offcanvas > ul > li.menu-item.current-menu-item > a {
+  color: #FF272B;
 }
 .c-nav-menu-offcanvas > ul li.menu-item-has-children {
   flex-direction: column;
@@ -11085,7 +11085,7 @@ ul li::marker {
   transition: all 0.5s linear;
 }
 .c-nav-menu-offcanvas > ul li.menu-item-has-children ul.sub-menu > li.menu-item.current-menu-item, .c-nav-menu-offcanvas > ul li.menu-item-has-children ul.sub-menu > li.menu-item:hover > a {
-  color: #02c400;
+  color: #FF272B;
 }
 .c-nav-menu-offcanvas > ul li.menu-item-has-children ul.sub-menu ul.sub-menu > li.menu-item a {
   padding-left: 70px;
