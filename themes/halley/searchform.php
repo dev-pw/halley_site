@@ -1,16 +1,30 @@
 <?php
 
-if(is_home()){
+// Obtém o valor enviado via GET para 'post_type', ou define como padrão 'post'
+$post_type = get_query_var('post_type') ? get_query_var('post_type') : 'post';
+// $post_type = get_query_var('category_name') ? get_query_var('category_name') : 'post';
+
+$value = $post_type;
+$name = 'post_type';
+
+// Verifica se está na página inicial
+if (is_home()) {
     $value = 'post';
-    $name = 'post_type';
 }
 
-if(is_category()){
-    $value = str_replace(' ', '-', strtolower(get_the_archive_title()) );
-    $name = 'category_name';
+// Verifica se o tipo de post atual é 'especialidades'
+if (get_post_type()) {
+    $value = get_post_type();
 }
 
-
+// Se estiver dentro de uma taxonomia específica
+if (is_tax() || is_category()) {
+    $term = get_queried_object();
+    if ($term && isset($term->slug)) {
+        $value = $term->slug;
+        $name = 'category_name';
+    }
+}
 
 ?>
 

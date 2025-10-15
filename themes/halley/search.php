@@ -13,14 +13,16 @@
 
 <main role="main">
 
-    <section class="pad-page py-5">
+    <?= get_template_part('template-parts/c-page-header'); ?>
+
+    <section class="u-py-5">
         <div class="container">
 
             <div class="mb-5">
-                <?php get_template_part('include/search'); ?>
+                <?php get_search_form(); ?>
             </div>
 
-            <p class="c-bloco-mensagem mb-5"><?php _e('Você pesquisou por:') ?> <?php echo get_search_query(); ?></p>
+            <p class="text-primary fw-bold mb-5"> <?php _e('Você pesquisou por:') ?> <span class="fw-normal"><?= get_search_query(); ?></span> </p>
 
             <?php if ( have_posts() ) : ?>
             <ul class="list-unstyled c-list-search">
@@ -43,7 +45,7 @@
 
                     <?php endif; ?>
 
-                    <a href="<?php the_permalink();  ?>" title="<?php the_title(); ?>" class="text-decoration-none">
+                    <a href="<?php the_permalink();  ?>" title="<?php the_title(); ?>" class="text-decoration-none text-limit">
                         <?php the_excerpt(); ?>
                     </a>
 

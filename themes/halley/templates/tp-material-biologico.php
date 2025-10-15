@@ -28,34 +28,29 @@ get_header();
                     científicas. Externamente, a caixa branca é o aspecto que se destaca. Mas a grande diferença
                     está no interior da caixa.</p>
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(87, 'full')[0]; ?>"
-                            alt="<?= get_post(87)->post_title; ?>">
-                        
-                    </div>
-                    <div class="col-lg-8 d-grid">
-                        <h2 class="text-primary">Por que é diferente?</h2>
-                        <div>
-                            <p class="border-start border-3 ps-3 border-primary">As cargas podem ser nocivas à saúde, por isso exigem certificações sanitárias, como a
-                                da Anvisa. Também é necessário o uso de técnicas apropriadas de manuseio,
-                                armazenagem e transporte. Para proteger as caixas com total segurança, usamos travas
-                                especiais, materiais absorventes de proteção, gelo seco ou gel packs.</p>
-                        </div>
-                        <h2 class="text-primary">Para onde vai a carga?</h2>
-                        <div>
-                            <p class="border-start border-3 ps-3 border-primary">Os destinos mais comuns são clínicas, laboratórios, universidades e centros de
-                                pesquisa. Temos parceiros homologados para coleta e entrega dos materiais em todos
-                                os estados do Brasil.</p>
-                        </div>
-                        <div class="">
-                            <h2 class="text-primary">Materiais Biológicos de Alta Complexidade</h2>
-                            <div class="d-flex border-start border-3 ps-3 border-primary">
-                                <img class="img-fluid" src="<?= wp_get_attachment_image_src(88, 'full')[0]; ?>"
-                                    alt="<?= get_post(88)->post_title; ?>">
+                <div class="row gy-4">
 
-                                    <img class="img-fluid" src="<?= wp_get_attachment_image_src(89, 'full')[0]; ?>"
-                                        alt="<?= get_post(89)->post_title; ?>">
+                    <div class="col-lg-4">
+                        <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(87, 'full')[0]; ?>" alt="<?= get_post(87)->post_title; ?>">
+                    </div>
+
+                    <div class="col-lg-8 d-grid">
+
+                        <div class="mb-4">
+                            <h2 class="text-primary mb-3">Por que é diferente?</h2>
+                            <p class="border-start border-3 ps-3 border-primary">As cargas podem ser nocivas à saúde, por isso exigem certificações sanitárias, como a da Anvisa. Também é necessário o uso de técnicas apropriadas de manuseio, armazenagem e transporte. Para proteger as caixas com total segurança, usamos travas especiais, materiais absorventes de proteção, gelo seco ou gel packs.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h2 class="text-primary mb-3">Para onde vai a carga?</h2>
+                            <p class="border-start border-3 ps-3 border-primary">Os destinos mais comuns são clínicas, laboratórios, universidades e centros de pesquisa. Temos parceiros homologados para coleta e entrega dos materiais em todos os estados do Brasil.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h2 class="text-primary mb-3">Materiais Biológicos de Alta Complexidade</h2>
+                            <div class="d-flex border-start border-3 ps-3 border-primary">
+                                <img class="img-fluid" src="<?= wp_get_attachment_image_src(88, 'full')[0]; ?>" alt="<?= get_post(88)->post_title; ?>">
+                                <img class="img-fluid" src="<?= wp_get_attachment_image_src(89, 'full')[0]; ?>" alt="<?= get_post(89)->post_title; ?>">
                             </div>
                         </div>
 

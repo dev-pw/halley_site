@@ -10727,12 +10727,12 @@ ul li::marker {
 }
 
 .transition, .l-featured-casos-clinicos .swiper-button-next:after,
-.l-featured-casos-clinicos .swiper-button-prev:after, .u-hover-scale-3x, .u-hover-translate-y-top-2, .u-hover-translate-y-top {
+.l-featured-casos-clinicos .swiper-button-prev:after, .c-list-cat a, .u-hover-scale-3x, .u-hover-translate-y-top-2, .u-hover-translate-y-top {
   transition: all 0.3s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .transition, .l-featured-casos-clinicos .swiper-button-next:after,
-  .l-featured-casos-clinicos .swiper-button-prev:after, .u-hover-scale-3x, .u-hover-translate-y-top-2, .u-hover-translate-y-top {
+  .l-featured-casos-clinicos .swiper-button-prev:after, .c-list-cat a, .u-hover-scale-3x, .u-hover-translate-y-top-2, .u-hover-translate-y-top {
     transition: none;
   }
 }
@@ -11097,6 +11097,34 @@ ul li::marker {
   max-height: 700px;
 }
 
+.c-list-search li, .c-list-striped li {
+  padding: 1rem !important;
+}
+.c-list-search li:nth-child(odd), .c-list-striped li:nth-child(odd) {
+  background-color: #f7f7f7;
+  border-left: 4px solid #001A49;
+}
+
+.c-list-cat a {
+  background-color: transparent;
+  color: #002049;
+}
+.c-list-cat a:hover {
+  background-color: #002049;
+  color: #fff;
+}
+
+.post-categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-categories a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .c-page-header,
 .l-page-header {
   background: linear-gradient(90deg, rgb(174, 111, 76) 0%, rgb(214, 168, 128) 100%);
@@ -11386,7 +11414,7 @@ ul li::marker {
 }
 
 .transition, .l-featured-casos-clinicos .swiper-button-next:after,
-.l-featured-casos-clinicos .swiper-button-prev:after, .u-hover-translate-y-top, .u-hover-translate-y-top-2, .u-hover-scale-3x {
+.l-featured-casos-clinicos .swiper-button-prev:after, .u-hover-translate-y-top, .u-hover-translate-y-top-2, .u-hover-scale-3x, .c-list-cat a {
   transition: all 0.3s ease-in-out;
 }
 

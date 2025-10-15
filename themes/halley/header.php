@@ -31,7 +31,7 @@ ini_set('display_errors', 'on');
 
 <!-- Preload -->
 <div id="preload">
-   <img src="<?= $preload; ?>" width="100">
+   <img src="<?= $preload; ?>" width="250">
 </div>
 <!-- Preload -->
 
