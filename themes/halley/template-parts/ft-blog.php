@@ -2,8 +2,8 @@
 
 // Define os parâmetros da consulta
 $args = array(
-    'post_type'     => 'post',     // tipo de post
-    'posts_per_page'=> 3          // número de posts (pode ser -1 para todos)
+    'post_type'      => 'post',
+    'posts_per_page' => 6
 );
 
 // Executa a consulta
@@ -29,20 +29,58 @@ $blog = new WP_Query($args);
             </div>
         </div>
 
-        <div class="row gy-4 mt-4">
+        <div class="swiper blog mt-5">
+            <div class="swiper-wrapper">
+                <?php if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post(); ?>
 
-            <?php if ($blog->have_posts()) : while ($blog->have_posts()) : $blog->the_post(); 
-            
-            ?>
+                <div class="swiper-slide pb-1">
+                    <?= get_template_part('template-parts/c-card-post'); ?>
+                </div>
 
-            <div class="col-lg-4">
-                <?= get_template_part('template-parts/c-card-post'); ?>
+                <?php endwhile;  else :
+                echo '<p>Não há notícias cadastradas no momento.</p>';
+                endif; wp_reset_postdata(); ?>
+                
             </div>
 
-            <?php endwhile;  else :
-            echo '<p>Não há notícias cadastradas no momento.</p>';
-            endif; wp_reset_postdata(); ?>
-            
+            <div class="swiper-pagination position-relative mt-5"></div>
+
         </div>
+
     </div>
 </section>
+
+<script>
+
+jQuery(document).ready(function($) {
+    
+    // SWIPER
+    var swiper = new Swiper(".blog", {
+            
+        spaceBetween: 20,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1400: {
+                slidesPerView: 4,
+            }
+        },
+    });
+
+});
+
+</script>
