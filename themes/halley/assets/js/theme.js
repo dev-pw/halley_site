@@ -11,6 +11,14 @@ jQuery(document).ready(function ($) {
             $('.l-header-site').removeClass('l-header-site__sticky');
         }
     });
+    
+   /*=================================================
+   CONFIGURACAO NAV MENU
+   =================================================*/
+   $("#js-navigation-menu .menu-item-has-children > a").click(function (e) {
+      $("#js-navigation-menu ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+         e.stopPropagation();
+   });
 
     /*=================================================
     Preload Do Site

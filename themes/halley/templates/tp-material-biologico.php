@@ -190,8 +190,8 @@ get_header();
         <?= get_template_part('template-parts/ft-cta'); ?>
         
     </div>
-    <?= get_template_part('template-parts/ft-news'); ?>
 
+    <?= get_template_part('template-parts/ft-news'); ?>
 
 </main>
 
