@@ -1,6 +1,6 @@
 <?php
 /**
- * Blog (Home.php)
+ * Category
  *
  * @package WordPress
  * @subpackage halley-site

@@ -1,31 +1,29 @@
-<!-- PAGE 404 -->
+<?php
+/**
+ * 404
+ *
+ * @package WordPress
+ * @subpackage halley-site
+ *
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
 
-<main>
-  <section class="page-title">
+<main role="main">
+
+  <?= get_template_part('template-parts/c-page-header'); ?>
+
+  <section class="u-py-5">
     <div class="container">
-      <h1>Página não encontrada</h1>
-    </div>
-  </section>
-
-  <!-- SEÇÃO -->
-  <section class="page-interna">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-12">
-          
-            <h2> A página que você acessou não existe. </h2>
-            <p> <a href="<?php echo get_site_url(); ?>"> Voltar ao site</a> </p>
-
-         </div>
-
+      
+      <div class="bg-primary p-5 rounded-3 shadow-sm text-white text-center col-lg-7 mx-auto">
+        <h2 class="h1"> Opps. Página não encontrada! </h2>
+        <p class="mb-4"> Parece que a página que você acessou não existe. </p>
+        <p> <a href="<?= get_site_url(); ?>" class="btn btn-secondary text-white"> Voltar ao site</a> </p>
       </div>
 
     </div>
 
-    </div>
   </section>
 
 </main>

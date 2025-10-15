@@ -22,6 +22,8 @@
                     </p>
                 </div>
 
+                <div class="col-auto d-none d-lg-block"> <span class="bg-white d-block h-100 opacity-25 rounded-5" style="width: 2px;"></span> </div>
+                
                 <div class="col-md-6 col-lg-3 text-white">
                     <h3 class="mb-3">Principais Serviços</h3>
                     <p class="small m-0">
@@ -34,6 +36,8 @@
                         <a href="#" class="link-light text-decoration-none">Transporte de Carga Seca</a>
                     </p>
                 </div>
+
+                <div class="col-auto d-none d-lg-block"> <span class="bg-white d-block h-100 opacity-25 rounded-5" style="width: 2px;"></span> </div>
 
                 <div class="col-md-6 col-lg-3 text-white">
                     <h3 class="mb-3">Horário de Funcionamento</h3>
