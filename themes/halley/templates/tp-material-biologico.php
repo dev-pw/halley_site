@@ -182,10 +182,10 @@ get_header();
         </div>
 
 
-        <?= get_template_part('template-parts/ft-cta'); ?>
         
     </div>
 
+    <?= get_template_part('template-parts/ft-cta'); ?>
     <?= get_template_part('template-parts/ft-news'); ?>
 
 </main>
