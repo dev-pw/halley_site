@@ -1,6 +1,6 @@
 <div class="u-py-5">
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-xl-6 align-items-center gy-4">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-xl-6 align-items-center gy-4 text-lg-initial text-center">
             <h3 class="">Certificações</h3>
 
             <div class="text-center">
