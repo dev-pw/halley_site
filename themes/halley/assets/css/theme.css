@@ -3562,7 +3562,7 @@ progress {
 }
 
 /* rtl:end:remove */
-.text-primary, .u-bloco-mensagem__primary {
+.text-primary, #breadcrumbs, .u-bloco-mensagem__primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
@@ -3607,7 +3607,7 @@ progress {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white, #breadcrumbs span span a, #breadcrumbs {
+.text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
