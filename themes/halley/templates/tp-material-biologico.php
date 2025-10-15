@@ -70,65 +70,65 @@ get_header();
                 <p class="text-white text-center">A preparação dos itens começa na retirada e passa por uma rígida conferência entre produto e notas fiscais. Após esse processo, separamos as embalagens, checamos volume, peso e dimensões, fotografamos e enviamos todo o material para o cliente acompanhar.</p>
 
                 <div class="row mt-5">
-                    <div class="col-lg-3">
-                        <div class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100 mb-4">
-                            <img src="<?php echo wp_get_attachment_url('29'); ?>" alt="" class="mb-3">
+                    <div class="col-lg-3 mb-4">
+                        <div class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
+                            <i class="fa-solid fa-star fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Certificações sanitárias, incluindo Anvisa.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('28'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-square-check fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Políticas de higiene e limpeza, cumprindo as exigências dos Órgãos Regulatórios.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('27'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-boxes-stacked fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Disponibilização de suprimentos e caixas validadas.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-tower-cell fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Rastreabilidade e monitoramento da carga em tempo real.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-snowflake fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Veículo com sistema de refrigeração.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-temperature-low fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Temperaturas e humidade controladas e monitoradas 24 horas.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-user-lock fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Controle de acesso às áreas de armazenagem com senha individual.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
+                            <i class="fa-solid fa-calendar-check fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Gerenciamento de estoque e controle de validade.</p>
                         </div>
                     </div>
@@ -140,42 +140,42 @@ get_header();
         <?= get_template_part('template-parts/ft-certificados'); ?>
 
         <div class="container">
-            <h2 class="text-center text-primary mb-4">Nosso Trabalho é a Sua Tranquilidade</h2>
+            <h2 class="text-center text-primary mb-5">Nosso Trabalho é a Sua Tranquilidade</h2>
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
-                    <p>armazenagem de medicamentos anvisa</p>
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('97'); ?>" alt="">
+                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-4">
-                    <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
-                    <p>armazenagem de medicamentos anvisa</p>
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('96'); ?>" alt="">
+                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-4">
-                    <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
-                    <p>armazenagem de medicamentos anvisa</p>
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('95'); ?>" alt="">
+                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-4">
-                    <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
-                    <p>empresa top of business 2015</p>
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('94'); ?>" alt="">
+                    <p class="text-center">Empresa top of business 2015</p>
                 </div>
 
-                <div class="col-lg-4">
-                    <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
-                    <p>logística hospitalar</p>
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('93'); ?>" alt="">
+                    <p class="text-center">Logística hospitalar</p>
                 </div>
 
-                <div class="col-lg-4">
-                    <img src="<?php echo wp_get_attachment_url('26'); ?>" alt="" class="mb-3">
-                    <p>armazenagem de medicamentos anvisa</p>
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('92'); ?>" alt="">
+                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
                 </div>
 
-                <div class="col-lg-12">
-                    <p>"A partir do momento em que a gente lida com algo de alta complexidade como material biológico, todas as outras tarefas se tornam mais simples."</p>
+                <div class="col-lg-12 d-none">
+                    <p class="text-center">"A partir do momento em que a gente lida com algo de alta complexidade como material biológico, todas as outras tarefas se tornam mais simples."</p>
                     <div>
-                        <img src="" alt="">
+                        <img src="<?php echo wp_get_attachment_url('98'); ?>" alt="">
                         <div>
                             <p>RODOLFO LOPEZ</p>
                             <span>Farmacêutico</span>
