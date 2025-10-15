@@ -23,32 +23,24 @@ get_header();
                 <div class="entry-content-post">
                     <?= the_content(); ?>
                 </div>
-                <p class="mb-5 text-center">A Halley está autorizada e capacitada para o transporte de materiais biológicos de alta
-                    complexidade. Geralmente são materiais para exames médicos, análises clínicas ou pesquisas
-                    científicas. Externamente, a caixa branca é o aspecto que se destaca. Mas a grande diferença
-                    está no interior da caixa.</p>
+                <p class="mb-5 text-center">Assim como para os materiais biológicos, a Halley está autorizada e preparada para o transporte de medicamentos e correlatos. Realizamos a triagem dos produtos farmacêuticos em nossa área de armazenagem e deixamos tudo pronto para a saída, que muitas vezes é imediata, no caso desse tipo de carga.</p>
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(87, 'full')[0]; ?>"
-                            alt="<?= get_post(87)->post_title; ?>">
+                        <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(107, 'full')[0]; ?>"
+                            alt="<?= get_post(107)->post_title; ?>">
                         
                     </div>
                     <div class="col-lg-8 d-grid">
                         <h2 class="text-primary">Por que é diferente?</h2>
                         <div>
-                            <p class="border-start border-3 ps-3 border-primary">As cargas podem ser nocivas à saúde, por isso exigem certificações sanitárias, como a
-                                da Anvisa. Também é necessário o uso de técnicas apropriadas de manuseio,
-                                armazenagem e transporte. Para proteger as caixas com total segurança, usamos travas
-                                especiais, materiais absorventes de proteção, gelo seco ou gel packs.</p>
+                            <p class="border-start border-3 ps-3 border-primary">Medicamentos são produtos sensíveis. Dependendo do medicamento, pode ser armazenado em temperatura ambiente ou refrigerado. As caixas combinam gel pack, plástico-bolha e divisórias. Em alguns casos, também inclui o s-pack, um tipo de isopor para conter a temperatura e evitar a movimentação do medicamento dentro da caixa.</p>
                         </div>
                         <h2 class="text-primary">Para onde vai a carga?</h2>
                         <div>
-                            <p class="border-start border-3 ps-3 border-primary">Os destinos mais comuns são clínicas, laboratórios, universidades e centros de
-                                pesquisa. Temos parceiros homologados para coleta e entrega dos materiais em todos
-                                os estados do Brasil.</p>
+                            <p class="border-start border-3 ps-3 border-primary">Os destinos mais comuns são clínicas ou hospitais onde os medicamentos são utilizados. Em certas situações, como de tratamento em Home Care, a entrega é no próprio endereço do paciente.</p>
                         </div>
-                        <div class="">
+                        <div class="d-none">
                             <h2 class="text-primary">Materiais Biológicos de Alta Complexidade</h2>
                             <div class="d-flex border-start border-3 ps-3 border-primary">
                                 <img class="img-fluid" src="<?= wp_get_attachment_image_src(88, 'full')[0]; ?>"
@@ -66,10 +58,10 @@ get_header();
 
         <div class="bg-primary u-py-5">
             <div class="container">
-                <h2 class="text-white mb-4 text-center">Cuidados Especiais</h2>
-                <p class="text-white text-center">A preparação dos itens começa na retirada e passa por uma rígida conferência entre produto e notas fiscais. Após esse processo, separamos as embalagens, checamos volume, peso e dimensões, fotografamos e enviamos todo o material para o cliente acompanhar.</p>
+                <h2 class="text-white mb-4 text-center">Cuidados com Medicamentos</h2> 
+                <p class="text-white text-center">Colaboradores treinados e qualificados. Equipamentos calibrados e validados. Análise crítica da frota com plano mensal de manutenção.</p>
 
-                <div class="row mt-5">
+                <div class="row mt-5 justify-content-center">
                     <div class="col-lg-3 mb-4">
                         <div class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-star fs-1 text-secondary mb-3"></i>
@@ -88,22 +80,6 @@ get_header();
                     <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-boxes-stacked fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Disponibilização de suprimentos e caixas validadas.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div
-                            class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-tower-cell fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Rastreabilidade e monitoramento da carga em tempo real.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div
-                            class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-snowflake fs-1 text-secondary mb-3"></i>
                             <p class="text-white">Veículo com sistema de refrigeração.</p>
                         </div>
@@ -113,7 +89,7 @@ get_header();
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-temperature-low fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Temperaturas e humidade controladas e monitoradas 24 horas.</p>
+                            <p class="text-white">Temperaturas adequadas para cada tipo de medicamento.</p>
                         </div>
                     </div>
 
@@ -143,11 +119,6 @@ get_header();
             <h2 class="text-center text-primary mb-5">Nosso Trabalho é a Sua Tranquilidade</h2>
             <div class="row">
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('97'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
-                </div>
-
-                <div class="col-lg-4 mb-3">
                     <img src="<?php echo wp_get_attachment_url('96'); ?>" alt="">
                     <p class="text-center">Armazenagem de medicamentos anvisa</p>
                 </div>
@@ -158,17 +129,22 @@ get_header();
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('94'); ?>" alt="">
-                    <p class="text-center">Empresa top of business 2015</p>
+                    <img src="<?php echo wp_get_attachment_url('93'); ?>" alt="">
+                    <p class="text-center">logística hospitalar</p>
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('93'); ?>" alt="">
+                    <img src="<?php echo wp_get_attachment_url('101'); ?>" alt="">
+                    <p class="text-center">transporte seguro de carga seca</p>
+                </div>
+
+                <div class="col-lg-4 mb-3">
+                    <img src="<?php echo wp_get_attachment_url('108'); ?>" alt="">
                     <p class="text-center">Logística hospitalar</p>
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('92'); ?>" alt="">
+                    <img src="<?php echo wp_get_attachment_url('106'); ?>" alt="">
                     <p class="text-center">Armazenagem de medicamentos anvisa</p>
                 </div>
 

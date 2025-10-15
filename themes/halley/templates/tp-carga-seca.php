@@ -23,32 +23,24 @@ get_header();
                 <div class="entry-content-post">
                     <?= the_content(); ?>
                 </div>
-                <p class="mb-5 text-center">A Halley está autorizada e capacitada para o transporte de materiais biológicos de alta
-                    complexidade. Geralmente são materiais para exames médicos, análises clínicas ou pesquisas
-                    científicas. Externamente, a caixa branca é o aspecto que se destaca. Mas a grande diferença
-                    está no interior da caixa.</p>
+                <p class="mb-5 text-center">A Halley tem experiência em logística e transporte de carga seca, de diversos tipos, desde sua fundação. É muito frequente transportarmos itens críticos, de diferentes tamanhos. As cargas variam de produtos delicados, como vinhos ou brindes promocionais, até peças robustas e extremamente pesadas para uso em portos e empresas de infraestrutura.</p>
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(87, 'full')[0]; ?>"
-                            alt="<?= get_post(87)->post_title; ?>">
+                        <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(100, 'full')[0]; ?>"
+                            alt="<?= get_post(100)->post_title; ?>">
                         
                     </div>
                     <div class="col-lg-8 d-grid">
-                        <h2 class="text-primary">Por que é diferente?</h2>
+                        <h2 class="text-primary">Por que é simples?</h2>
                         <div>
-                            <p class="border-start border-3 ps-3 border-primary">As cargas podem ser nocivas à saúde, por isso exigem certificações sanitárias, como a
-                                da Anvisa. Também é necessário o uso de técnicas apropriadas de manuseio,
-                                armazenagem e transporte. Para proteger as caixas com total segurança, usamos travas
-                                especiais, materiais absorventes de proteção, gelo seco ou gel packs.</p>
+                            <p class="border-start border-3 ps-3 border-primary">Por mais que a carga seca exija, geralmente, menos protocolos de segurança do que os materiais biológicos com que trabalhamos, existem cargas secas de diferentes níveis de complexidade. A Halley está apta a transportar qualquer tipo, das mais simples às mais complexas.</p>
                         </div>
                         <h2 class="text-primary">Para onde vai a carga?</h2>
                         <div>
-                            <p class="border-start border-3 ps-3 border-primary">Os destinos mais comuns são clínicas, laboratórios, universidades e centros de
-                                pesquisa. Temos parceiros homologados para coleta e entrega dos materiais em todos
-                                os estados do Brasil.</p>
+                            <p class="border-start border-3 ps-3 border-primary">A carga pode ser transportada entre dois endereços pré-estabelecidos ou armazenada em nossa estrutura própria, com total segurança e cuidado. Também possuímos autorização, equipamentos e pessoal especialmente treinado para atuar em aeroportos, quando for necessário.</p>
                         </div>
-                        <div class="">
+                        <div class="d-none">
                             <h2 class="text-primary">Materiais Biológicos de Alta Complexidade</h2>
                             <div class="d-flex border-start border-3 ps-3 border-primary">
                                 <img class="img-fluid" src="<?= wp_get_attachment_image_src(88, 'full')[0]; ?>"
@@ -66,54 +58,30 @@ get_header();
 
         <div class="bg-primary u-py-5">
             <div class="container">
-                <h2 class="text-white mb-4 text-center">Cuidados Especiais</h2>
-                <p class="text-white text-center">A preparação dos itens começa na retirada e passa por uma rígida conferência entre produto e notas fiscais. Após esse processo, separamos as embalagens, checamos volume, peso e dimensões, fotografamos e enviamos todo o material para o cliente acompanhar.</p>
+                <h2 class="text-white mb-4 text-center">Transportamos com todo cuidado</h2>
+                <p class="text-white text-center">Identificado o tipo de carga, realizamos o recebimento, a conferência do material, a separação por Nota Fiscal e o envio até o seu destino final.</p>
 
-                <div class="row mt-5">
+                <div class="row mt-5 justify-content-center">
                     <div class="col-lg-3 mb-4">
                         <div class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-star fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Certificações sanitárias, incluindo Anvisa.</p>
+                            <i class="fa-solid fa-sliders fs-1 text-secondary mb-3"></i>
+                            <p class="text-white">Diferenciação e análise dos perfis de cada carga.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-square-check fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Políticas de higiene e limpeza, cumprindo as exigências dos Órgãos Regulatórios.</p>
+                            <i class="fa-solid fa-plane fs-1 text-secondary mb-3"></i>
+                            <p class="text-white">Colaboradores treinados para atuar em aeroportos.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 mb-4">
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-boxes-stacked fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Disponibilização de suprimentos e caixas validadas.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div
-                            class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-tower-cell fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Rastreabilidade e monitoramento da carga em tempo real.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div
-                            class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-snowflake fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Veículo com sistema de refrigeração.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div
-                            class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <i class="fa-solid fa-temperature-low fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Temperaturas e humidade controladas e monitoradas 24 horas.</p>
+                            <i class="fa-solid fa-gifts fs-1 text-secondary mb-3"></i>
+                            <p class="text-white">Preparo e entrega de kits em caso de brindes e peças promocionais.</p>
                         </div>
                     </div>
 
@@ -129,9 +97,18 @@ get_header();
                         <div
                             class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fa-solid fa-calendar-check fs-1 text-secondary mb-3"></i>
-                            <p class="text-white">Gerenciamento de estoque e controle de validade.</p>
+                            <p class="text-white">Gerenciamento de estoque com segurança 24h.</p>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 mb-4">
+                        <div
+                            class="border p-5 rounded-4 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
+                            <i class="fa-solid fa-truck-fast fs-1 text-secondary mb-3"></i>
+                            <p class="text-white">Análise crítica da frota com plano mensal de manutenção.</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -140,36 +117,30 @@ get_header();
         <?= get_template_part('template-parts/ft-certificados'); ?>
 
         <div class="container">
-            <h2 class="text-center text-primary mb-5">Nosso Trabalho é a Sua Tranquilidade</h2>
+            <h2 class="text-center text-primary mb-5">A Halley está aqui para Entregar Bem</h2>
             <div class="row">
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('97'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                    <img src="<?php echo wp_get_attachment_url('103'); ?>" alt="">
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('96'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                    <img src="<?php echo wp_get_attachment_url('102'); ?>" alt="">
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('95'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                    <img src="<?php echo wp_get_attachment_url('101'); ?>" alt="">
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('94'); ?>" alt="">
-                    <p class="text-center">Empresa top of business 2015</p>
+                    <img src="<?php echo wp_get_attachment_url('106'); ?>" alt="">
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('93'); ?>" alt="">
-                    <p class="text-center">Logística hospitalar</p>
+                    <img src="<?php echo wp_get_attachment_url('105'); ?>" alt="">
                 </div>
 
                 <div class="col-lg-4 mb-3">
-                    <img src="<?php echo wp_get_attachment_url('92'); ?>" alt="">
-                    <p class="text-center">Armazenagem de medicamentos anvisa</p>
+                    <img src="<?php echo wp_get_attachment_url('104'); ?>" alt="">
                 </div>
 
                 <div class="col-lg-12 d-none">
