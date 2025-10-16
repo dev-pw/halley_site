@@ -2,6 +2,7 @@
 
 $whats = get_option('options_rs_5');
 $zap = str_replace(array('(', ')', '-', ' '), '', $whats);
+
 ?>
 
 <section class="whatsapp">
