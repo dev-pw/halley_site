@@ -11176,7 +11176,7 @@ ul li::marker {
   position: absolute;
   right: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 99;
   padding: 16px;
 }
 

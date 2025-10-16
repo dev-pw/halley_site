@@ -24,7 +24,7 @@ $tel_url2 = str_replace(array('(', ')', '-', ' '), '', $telefone2);
                 <h3 class="text-secondary mt-4">Ponto de Partida</h3>
                 <p class="text-primary"> <?= $endereco; ?> </p>
             </div>
-
+            
             <div class="col-md-6 col-lg-3 text-center ">
                 <div class="d-flex justify-content-center align-itens-center rounded-4 bg-secondary p-4 mx-auto" style="width: 75px; height: 75px;">
                     <img src="<?= wp_get_attachment_url('38'); ?>" class="" alt="">
