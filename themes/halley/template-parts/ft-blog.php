@@ -21,7 +21,7 @@ $blog = new WP_Query($args);
             </div>
 
             <div class="col-lg-6">
-                <p class="p-0 m-0">Entregamos as melhores soluções logísticas para você, sempre considerando as particularidades de ntregamos as melhores soluções logísticas para você</p>
+                <p class="p-0 m-0">Entregamos as melhores soluções logísticas para você, sempre considerando as particularidades de entregamos as melhores soluções logísticas para você</p>
             </div>
 
             <div class="col-lg-2">
