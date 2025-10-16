@@ -72,6 +72,7 @@
 </div><!-- WRAPPER SITE -->
 
 <?php get_template_part("template-parts/modal-retorno"); ?>
+<?php get_template_part("template-parts/c-whatsapp"); ?>
 
 <?php wp_footer(); ?>
 </body>
