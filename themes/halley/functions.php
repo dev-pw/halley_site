@@ -37,7 +37,7 @@ function enqueue_scripts() {
 	wp_enqueue_script( 'tema-js', get_template_directory_uri().'/assets/js/theme.js', array('jquery'), $tema_version, true );
 
 	// FORMS JS
-	// wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
+	wp_enqueue_script( 'forms-js', get_template_directory_uri().'/assets/js/forms.js', array('jquery'), $tema_version, true );
 
 }
 

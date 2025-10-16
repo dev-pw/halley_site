@@ -71,6 +71,8 @@
 </footer>
 </div><!-- WRAPPER SITE -->
 
+<?php get_template_part("template-parts/modal-retorno"); ?>
+
 <?php wp_footer(); ?>
 </body>
 </html>

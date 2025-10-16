@@ -83,35 +83,41 @@ $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
                 <div class="col-lg-7">
                     <article class="p-xl-5 px-3 py-4">
                         <h2 class="h5 mb-3 text-primary">Formulário de Contato</h2>
+
+
                         <form class="forms-contato form_contato" data-action-caminho="<?= get_template_directory_uri() ?>" data-action="contato/inserir" method="POST">
+                            
+                        <input type="hidden" name="website">
+
+
                             <div class="row g-2">
                                 <div class="col-xl-12">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control border-primary text-dark rounded" id="campo-nome" placeholder="nome" name="nome" wfd-id="id0">
-                                        <label for="campo-nome" class="fw-bold small text-primary form-label">Nome *</label>
+                                        <input type="text" class="form-control border-primary text-dark rounded" id="nome" placeholder="nome" name="nome" wfd-id="id0">
+                                        <label for="nome" class="fw-bold small text-primary form-label">Nome *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control border-primary text-dark rounded" id="campo-email" placeholder="e-mail" name="email" wfd-id="id1">
-                                        <label for="campo-email" class="fw-bold small text-primary form-label">E-mail *</label>
+                                        <input type="email" class="form-control border-primary text-dark rounded" id="email" placeholder="e-mail" name="email" wfd-id="id1">
+                                        <label for="email" class="fw-bold small text-primary form-label">E-mail *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control border-primary text-dark rounded js_tel_mask" id="campo-telefone" placeholder="telefone" name="telefone" maxlength="15" wfd-id="id2">
-                                        <label for="campo-telefone" class="fw-bold small text-primary form-label">Telefone *</label>
+                                        <input type="text" class="form-control border-primary text-dark rounded js_tel_mask" id="telefone" placeholder="telefone" name="tel" maxlength="15" wfd-id="id2">
+                                        <label for="telefone" class="fw-bold small text-primary form-label">Telefone *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control border-primary text-dark rounded" id="campo-empresa" placeholder="Empresa" name="empresa" wfd-id="id1">
-                                        <label for="campo-empresa" class="fw-bold small text-primary form-label">Empresa</label>
+                                        <input type="text" class="form-control border-primary text-dark rounded" id="empresa" placeholder="Empresa" name="empresa" wfd-id="id1">
+                                        <label for="empresa" class="fw-bold small text-primary form-label">Empresa *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                   <div class="form-floating mb-3">
-                                    <select class="form-select border-primary" id="floatingSelect" aria-label="Floating label select example">
+                                    <select class="form-select border-primary" id="floatingSelect" name="servico" aria-label="Floating label select example">
                                       <option selected> -- Selecione a opção --</option>
                                       <option value="Logística">Logística</option>
                                       <option value="Transporte">Transporte</option>
@@ -122,14 +128,14 @@ $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control border-primary text-dark rounded" id="campo-assunto" placeholder="Assunto" name="assunto" wfd-id="id3">
-                                        <label for="campo-assunto" class="fw-bold small text-primary form-label">Assunto</label>
+                                        <input type="text" class="form-control border-primary text-dark rounded" id="assunto" placeholder="Assunto" name="assunto" wfd-id="id3">
+                                        <label for="assunto" class="fw-bold small text-primary form-label">Assunto *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control border-primary text-dark rounded" placeholder="Deixe sua mensagem" id="campo-mensagem" name="mensagem" style="height: 300px"></textarea>
-                                        <label for="campo-mensagem" class="fw-bold small text-primary form-label">Deixe sua mensagem</label>
+                                        <textarea class="form-control border-primary text-dark rounded" placeholder="Deixe sua mensagem" id="mensagem" name="mensagem" style="height: 300px"></textarea>
+                                        <label for="mensagem" class="fw-bold small text-primary form-label">Deixe sua mensagem *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
 
