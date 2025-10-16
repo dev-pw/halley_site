@@ -19,15 +19,13 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
     <div class="u-py-5">
         <div class="container">
 
-            <p class="text-center  mb-4">Somos pessoas que armazenam e transportam cargas de clientes exigentes, com toda atenção necessária. Ou seja, trabalhamos guiados por um alto padrão de qualidade.</p>
-
-            <div class="row">
-                <div class="col-lg-8">
+            <div class="row gy-4">
+                <div class="col-lg-8 col-xl-9">
                     <div class="entry-content-post">
                         <?= the_content(); ?>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-5 col-lg-4 col-xl-3">
                     <img src="<?= wp_get_attachment_image_src($img, 'full')[0]; ?>" class="w-100 rounded-4" alt="<?= get_post(110)->post_title; ?>">
                 </div>
             </div>
@@ -41,28 +39,28 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
             
                 <div class="row gy-4 text-white mt-5">
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">110</p>
                             <p>Remessas Diárias de Materiais Biológicos em 2017</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">480</p>
                             <p>Equipamentos Cirúrgicos Transportados em 2021</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">700</p>
                             <p>Kg de Equipamentos Pesados: Média Mensal</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">65</p>
                             <p>Mil Doses de Anestésico para Covid em 2021</p>
@@ -77,18 +75,19 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
 
             <div>
                 <div class="row gy-4">
-                    <div class="col-lg-6">
+
+                    <!-- <div class="col-lg-6">
                         <img src="<?= wp_get_attachment_url('111'); ?>" class="w-100 rounded-4" alt="<?= get_post(111)->post_title; ?>">
                     </div>
 
                     <div class="col-lg-6">
                         <p>Acreditamos na Força do Trabalho em Conjunto.</p>
-                    </div>
+                    </div> -->
 
                     <div class="col-md-6 col-lg-4">
                         <div class="bg-light p-5 h-100 text-center">
                             <i class="fa-solid fa-bullseye text-primary display-3 fw-bolder"></i>
-                            <h3 class="text-primary mb-3">Missão</h3>
+                            <h3 class="text-primary mt-4 mb-3">Missão</h3>
                             <p class="text-start">Oferecer serviços de transporte e gerenciamento logístico com excelência, zelando pelo desenvolvimento de melhores métodos logísticos, visando a satisfação dos clientes, colaboradores, sócios e parceiros estratégicos.</p>
                         </div>
                     </div>
@@ -96,15 +95,15 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
                     <div class="col-md-6 col-lg-4">
                         <div class="bg-light p-5 h-100 text-center">
                             <i class="fa-solid fa-binoculars text-primary display-3 fw-bolder"></i>
-                            <h3 class="text-primary mb-3">Visão</h3>
+                            <h3 class="text-primary mt-4 mb-3">Visão</h3>
                             <p class="text-start">Dedicação e eficiência no ramo de gerenciamento logístico e transporte com abrangência nacional.</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-4">
                         <div class="bg-light p-5 h-100 text-center">
                             <i class="fa-solid fa-gem text-primary display-3 fw-bolder"></i>
-                            <h3 class="text-primary mb-3">Valores</h3>
+                            <h3 class="text-primary mt-4 mb-3">Valores</h3>
                             <p class="text-start">Oferecer serviços de transporte e gerenciamento logístico com excelência, zelando pelo desenvolvimento de melhores métodos logísticos, visando a satisfação dos clientes, colaboradores, sócios e parceiros estratégicos.</p>
                             <p class="text-start">• Conduta ética<br>• Melhoria contínua<br>• Valorização do capital intelectual<br>• Responsabilidade socioambiental<br>• Comprometimento</p>
                         </div>
@@ -118,7 +117,7 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
                 <div class="row">
 
                     <div class="col-md-6 p-0">
-                        <img src="<?= wp_get_attachment_url('113'); ?>" class="w-100 rounded-4" alt="<?= get_post(113)->post_title; ?>">
+                        <img src="<?= wp_get_attachment_url('113'); ?>" class="w-100" alt="<?= get_post(113)->post_title; ?>">
                     </div>
 
                     <div class="col-md-6 bg-primary text-white">
@@ -135,15 +134,28 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
 
         <section class="container my-5">
 
-            <div>
-                <h2>Uma Empresa de Pessoas para Pessoas.</h2>
-                <p>Fácil acesso aos diretores, sempre que necessário, é mais um ponto forte da Halley. Nosso foco é resolver a logística, o transporte e armazenagem de forma rápida e eficiente.</p>
-                <div>
-                    <img src="<?= wp_get_attachment_url('112'); ?>" class="w-100 rounded-4" alt="<?= get_post(112)->post_title; ?>">
-                    <p>Marcio Mantello</p>
-                    <span>Diretor Executivo</span>
-                    "O principal motivo de os clientes continuarem com a gente é a dedicação. Ele liga e fala com uma pessoa. A gente trata todos com exclusividade.”
+            <div class="row gy-4">
+
+                <div class="col-md-6">
+                    <div class="bg-light p-5 d-flex flex-column h-100 justify-content-center">
+                        <h2 class="text-primary mb-2">Uma Empresa de Pessoas para Pessoas.</h2>
+                        <p>Fácil acesso aos diretores, sempre que necessário, é mais um ponto forte da Halley. Nosso foco é resolver a logística, o     transporte e armazenagem de forma rápida e eficiente.</p>
+                        <p class="small">"O principal motivo de os clientes continuarem com a gente é a dedicação. Ele liga e fala com uma pessoa. A gente trata todos com exclusividade.”</p>
+                    </div>
                 </div>
+
+                <div class="col-md-6">
+                    
+                    <figure class="text-center">
+                        <img src="<?= wp_get_attachment_url('112'); ?>" class="rounded-circle object-fit-cover mb-3" width="300px" height="300px" alt="<?= get_post(112)->post_title; ?>">
+                        <figcaption>
+                            <p class="text-primary m-0"> Marcio Mantello </p>
+                            <span class="small">Diretor Executivo</span>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
             </div>
 
         </section>
