@@ -8,11 +8,21 @@
         <h2 class="text-white">Quer boas noticias?</h2>
         <p class="text-white"> Sempre que tivermos uma novidade, vamos avisar você </p>
 
-        <form >
+        <form class="form_news" data-action-caminho="<?= get_template_directory_uri() ?>" data-action="newsletter/inserir" method="POST">
           <div class="form-floating mb-3">
             <input type="email" class="form-control text-white bg-transparent rounded-0" name="email" id="email" placeholder="Email">
             <label for="email" class="text-white">E-mail</label>
-            <button class="btn btn-primary mt-3">Quero receber novidades</button>
+
+            <button type="submit" class="btn btn-primary mt-3">
+              Quero receber novidades
+              <!-- SPINNER -->
+              <span class="spinner ms-1" style="display: none">
+                <div class="spinner-border spinner-border-sm ml-2" role="status">
+                  <span class="sr-only"></span>
+                </div>
+              </span>
+              <!-- SPINNER -->
+            </button>
           </div>
         </form>
 

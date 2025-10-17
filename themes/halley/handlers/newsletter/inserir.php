@@ -7,7 +7,6 @@ include('../connection.php');
 
 date_default_timezone_set('America/Sao_Paulo');
 
-$nome         = addslashes($_POST['nome']);
 $email         = addslashes($_POST['email']);
 $data_hora     = date('Y-m-d H:i:s');
 
@@ -40,15 +39,16 @@ try {
     // INSERT
     $stmt = $pdo->prepare('
       INSERT INTO newsletter_site (
-        nome_news, email_news, data_cad_news
+        email_news, data_cadastro
+
       ) VALUES (
-        :nome_news, :email_news, :data_cad_news
+        :email_news, :data_cadastro
+
       )');
 
     $stmt->execute(array(
-      ':nome_news'     => $nome,
       ':email_news'    => $email,
-      ':data_cad_news' => $data_hora
+      ':data_cadastro' => $data_hora
     ));
 
 
