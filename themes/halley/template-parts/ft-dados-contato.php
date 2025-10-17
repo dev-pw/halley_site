@@ -46,7 +46,8 @@ $tel_url2 = str_replace(array('(', ')', '-', ' '), '', $telefone2);
                     <img src="<?= wp_get_attachment_url('37'); ?>" class="" alt="">
                 </div>
                 <h3 class="text-secondary mt-4">Já Chegou!</h3>
-                <p class="text-primary"> <?= $endereco; ?> </p>
+                <p class="text-primary">
+                    <a href="mailto:atendimento@halleylog.com.br" class="text-decoration-none"> atendimento@halleylog.com.br</a> </p>
             </div>
 
         </div>
