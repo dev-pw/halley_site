@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
 
 include('../util/funcoes_uteis.php');
 include('../util/cript.php');
@@ -151,10 +149,18 @@ try {
                         </tr>
                         <tr>
                           <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Telefone:</strong></p></td>
-                          <td valign="top" bgcolor="#f6f6f6">'.$telefone.'</td>
+                          <td valign="top" bgcolor="#f6f6f6">'.$tel.'</td>
                         </tr>
                         <tr>
-                          <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Assunto:</strong></p></td>
+                          <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Empresa:</strong></p></td>
+                          <td valign="top" bgcolor="#f6f6f6">'.$empresa.'</td>
+                        </tr>
+                        <tr>
+                          <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Serviço:</strong></p></td>
+                          <td valign="top" bgcolor="#f6f6f6">'.$servico.'</td>
+                        </tr>
+                        <tr>
+                          <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Assunt  o:</strong></p></td>
                           <td valign="top" bgcolor="#f6f6f6">'.$assunto.'</td>
                         </tr>
                         <tr>
@@ -214,7 +220,7 @@ try {
                   <tr style="background-color: #FF272B;">
                     <td>&nbsp;</td>
                     <td align="center">
-                      <a href="hlaleylo.com.br" style="color: #FFF; text-decoration: none" target="_blank"> <strong>hlaleylo.com.br</strong> </a>
+                      <a href="hlaleylo.com.br" style="color: #FFF; text-decoration: none" target="_blank"> <strong>halley.com.br</strong> </a>
                     </td>
                     <td>&nbsp;</td>
                   </tr>
