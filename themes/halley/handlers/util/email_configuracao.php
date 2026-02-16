@@ -1,6 +1,6 @@
 <?php
 
-define('CHAVE_BREVO', 'xsmtpsib-91bd1fdc882efbfa67fb201510ccf155d2623da508d4229c0de40c1e8231762e-FhhCLbzBWviVAFVB');
+define('CHAVE_BREVO', '');
 
 // NECESSÁRIO ESTAR ANTES DE TUDO
 use PHPMailer\PHPMailer\PHPMailer;
