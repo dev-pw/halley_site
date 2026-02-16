@@ -100,4 +100,51 @@ function ivision_defer_scripts( $tag, $handle, $src ) {
 }
 add_filter( 'script_loader_tag', 'ivision_defer_scripts', 10, 3 );
 
+
+/*--------------------------------------------------------------
+Header de Segurança
+--------------------------------------------------------------*/
+
+function headers_security() {
+    // Content-Security-Policy - mais restritivo e completo
+    // header(
+	// 	"Content-Security-Policy: " .
+    //     "default-src 'self'; " .
+    //     "script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://consent.cookiebot.com https://consentcdn.cookiebot.com; " .
+    //     "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; " .
+    //     "img-src 'self' data: https:; " .
+    //     "font-src 'self' data: https://fonts.gstatic.com; " .
+    //     "connect-src 'self' https://cdn.jsdelivr.net https://consent.cookiebot.com https://consentcdn.cookiebot.com; " .
+    //     "frame-src 'self' https://consent.cookiebot.com https://consentcdn.cookiebot.com https://www.google.com; " .
+    //     "base-uri 'self'; " .
+    //     "form-action 'self'; " .
+    //     "upgrade-insecure-requests"
+	// );
+    
+    // X-Content-Type-Options - mantém
+    header("X-Content-Type-Options: nosniff");
+    
+    // Strict-Transport-Security (HSTS) - mantém
+    header("Strict-Transport-Security: max-age=31536000; includeSubDomains; preload");
+    
+    // X-Frame-Options - mantém (redundante com CSP frame-ancestors, mas bom ter)
+    header("X-Frame-Options: DENY");
+    
+    // Referrer-Policy - melhor opção
+    header("Referrer-Policy: strict-origin-when-cross-origin");
+    
+    // Permissions-Policy - expandido e corrigido
+    header("Permissions-Policy: geolocation=(self), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()");
+    
+    // Cross-Origin-Opener-Policy - NOVO
+    header("Cross-Origin-Opener-Policy: same-origin");
+    
+    // Cross-Origin-Resource-Policy - NOVO
+    header("Cross-Origin-Resource-Policy: same-origin");
+    
+    // Cross-Origin-Embedder-Policy - NOVO (cuidado, pode quebrar recursos externos)
+    // header("Cross-Origin-Embedder-Policy: require-corp");
+}
+add_action('send_headers', 'headers_security');
+
 ?>

@@ -15,7 +15,7 @@
                         <a href="<?= the_permalink(53); ?>" class="link-light text-decoration-none">Fale com a Halley</a>
                     </p>
                     <p class="small m-0">
-                        <a href="<?= the_permalink(52); ?>" class="link-light text-decoration-none">Somos Halley</a>
+                        <a href="<?= the_permalink(51); ?>" class="link-light text-decoration-none">Somos Halley</a>
                     </p>
                 </div>
 
