@@ -1,7 +1,5 @@
 <?php
 
-define('CHAVE_BREVO', '');
-
 // NECESSÁRIO ESTAR ANTES DE TUDO
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -22,7 +20,7 @@ $mail->Host = "smtp-relay.brevo.com"; // HOST DO SMTP
 $mail->AuthType   = 'LOGIN';
 $mail->SMTPAuth = true;
 $mail->Username = "a28921001@smtp-brevo.com"; // EMAIL
-$mail->Password = CHAVE_BREVO; // SENHA
+$mail->Password = ''; // SENHA
 $mail->SMTPSecure = "tls"; // SE O SMTP TIVER CRIPTOGRAFIA, USAR ESTA LINHA
 $mail->Port = 587; // PORTA
 $mail->setFrom('contato@halleylog.com.br', 'Halley Log'); // MESMO EMAIL DO USERNAME
