@@ -3,16 +3,14 @@
 /*--------------------------------------------------------------
 INDICE
 
-DESATIVAR ACESSO EDITOR DE ARQUIVOS
-DISABLE XML-RPC
-BUSCAS POR ID DE POST NO PAINEL
-REMOVER A FUNÇÃO DE COMENTÁRIOS
-REMOVER CATEGORY / TAG / AUTHOR EM ARCHIVE TITLE (EX: Arquivos: Agenda)
-PAGINAÇÃO COM NÚMEROS
-SVG UPLOADS
-SEGURANÇA
-OPÇÔES DO SITE
-
+1 - DESATIVAR ACESSO EDITOR DE ARQUIVOS
+2 - DISABLE XML-RPC
+3 - REMOVER A FUNÇÃO DE COMENTÁRIOS
+4 - REMOVER CATEGORY / TAG / AUTHOR EM ARCHIVE TITLE (EX: Arquivos: Agenda)
+5 - PAGINAÇÃO COM NÚMEROS
+6 - SVG UPLOADS
+7 - OPÇÕES DO SITE
+8 - REMOVENDO BIBLIOTECA WP JS
 --------------------------------------------------------------*/
 
 
@@ -26,21 +24,6 @@ define("DISALLOW_FILE_EDIT", true);
 DISABLE XML-RPC
 --------------------------------------------------------------*/
 add_filter('xmlrpc_enabled', '__return_false');
-
-
-/*--------------------------------------------------------------
-BUSCAS POR ID DE POST NO PAINEL
---------------------------------------------------------------*/
-add_filter('pre_get_posts', function($query) {
-    if (is_admin() && $query->is_main_query() && $query->is_search()) {
-        $search_term = $query->get('s');
-        if (is_numeric($search_term)) {
-            $query->set('post__in', [(int) $search_term]);
-            $query->set('s', '');
-        }
-    }
-    return $query;
-});
 
 
 /*--------------------------------------------------------------
@@ -144,15 +127,13 @@ function paging_nav()
             'prev_text' => __('«', ''),
             'next_text' => __('»', ''),
         ));
-    if ($links):
-        ?>
+    if ($links): ?>
 
-            <nav class="c-paginacao" role="navigation">
-                <?php echo $links; ?>
-            </nav>
+        <nav class="flex gap-2 justify-center mt-10" role="navigation">
+            <?php echo $links; ?>
+        </nav>
 
-            <?php
-    endif;
+<?php  endif;
 }
 
 
@@ -211,10 +192,25 @@ add_filter(
     5
 );
 
-
 /*--------------------------------------------------------------
 Opções do Site
 --------------------------------------------------------------*/
 get_template_part('inc/options/index');
+
+
+/*--------------------------------------------------------------
+REMOVENDO BIBLIOTECA JS
+--------------------------------------------------------------*/
+
+add_action( 'wp_enqueue_scripts', function() {
+    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'global-styles' ); // WP 6+
+}, 20 );
+
+add_action( 'init', function() {
+    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+    remove_action( 'wp_print_styles', 'print_emoji_styles' );
+});
 
 ?>
