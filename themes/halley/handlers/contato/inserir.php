@@ -15,18 +15,6 @@ $mensagem  = addslashes($_POST['mensagem']);
 // PARA EVITAR SPAM
 if(!empty($_POST['website'])) die();
 
-/* RECAPTCHA */
-// $captcha = $_POST['g-recaptcha-response'];
-//
-// if(!$captcha) {
-//   echo json_encode(array(
-//     'status' => 'erro',
-//     'erro' => 'Por favor, selecione a opção do "Não sou um robô" para submeter as informações do formulário'
-//   ));
-//   exit;
-// }
-/* RECAPTCHA */
-
 // CHECANDO SE OS CAMPOS ESTÃO VAZIOS
 checarVazio( $nome, 'nome'); 
 checarVazio( $email, 'email');
@@ -34,6 +22,18 @@ checarVazio( $tel, 'tel');
 checarVazio( $empresa, 'empresa');
 checarVazio( $assunto, 'assunto');
 checarVazio( $mensagem, 'mensagem');
+
+/* RECAPTCHA */
+$captcha = $_POST['g-recaptcha-response'];
+
+if(!$captcha) {
+  echo json_encode(array(
+    'status' => 'erro',
+    'erro' => 'Por favor, selecione a opção do "Não sou um robô" para submeter as informações do formulário'
+  ));
+  exit;
+}
+/* RECAPTCHA */
 
 // CHECANDO SE POSSUI CONTEÚDO SUSPEITO
 checarSpam($nome);
