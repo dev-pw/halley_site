@@ -17,5 +17,5 @@ jobs:
         server: ${{ secrets.host }}
         username: ${{ secrets.user }}
         password: ${{ secrets.pass }}
-        server-dir: public_html/halley/wp-content/themes/halley/
+        server-dir: public_html/site/wp-content/themes/halley/
         local-dir: ./themes/halley/
