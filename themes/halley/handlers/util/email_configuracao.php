@@ -16,13 +16,13 @@ $mail = new PHPMailer(true);
 
 $mail->SMTPDebug = 0; // ATIVA O DEBUGGIN PARA VERIFICAÇÃO DE ERROS (remover quando finalizados os testes)
 $mail->IsSMTP(); // DEFINE O PADRÃO SMTP
-$mail->Host = "email-ssl.com.br"; // HOST DO SMTP
+$mail->Host = "smtp-relay.brevo.com"; // HOST DO SMTP
 $mail->SMTPAuth = true;
-$mail->Username = "desenvolvimento@planetaw.ag"; // EMAIL
-$mail->Password = "vF8xl8pwdDE2j@Oq"; // SENHA
+$mail->Username = "a28921001@smtp-brevo.com"; // EMAIL
+$mail->Password = "xsmtpsib-91bd1fdc882efbfa67fb201510ccf155d2623da508d4229c0de40c1e8231762e-NvDN3b2OtyH2Ol8R"; // SENHA
 $mail->SMTPSecure = "tls"; // SE O SMTP TIVER CRIPTOGRAFIA, USAR ESTA LINHA
 $mail->Port = 587; // PORTA
-$mail->From = "desenvolvimento@planetaw.ag"; // MESMO EMAIL DO USERNAME
+$mail->setFrom('contato@halleylog.com.br', 'Halley Log'); // MESMO EMAIL DO USERNAME
 $mail->FromName = utf8_decode('Halley Log'); // NOME DO REMETENTE
 
 $mail->addAddress($email); // EMAIL DO DESTINATÁRIO
