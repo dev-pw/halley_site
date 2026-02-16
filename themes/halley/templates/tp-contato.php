@@ -143,7 +143,7 @@ $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
                                     <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
                                     <div>
                                         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                                        <div class="g-recaptcha" data-sitekey="6Le4BpoqAAAAAEkuR-jbL1Hlfj_frch4xrveefTD" style="margin:10px 0px;"></div>
+                                        <div class="g-recaptcha" data-sitekey="6LclqG0sAAAAAAzr2dbsE0pAeYffegVbUk-ob-kr" style="margin:10px 0px;"></div>
                                     </div>
                                 </div>
 
