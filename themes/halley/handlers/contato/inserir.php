@@ -63,9 +63,7 @@ try {
       servico,
       assunto,
       mensagem
-
     ) VALUES (
-
       :nome,
       :email,
       :tel,
@@ -73,37 +71,34 @@ try {
       :servico,
       :assunto,
       :mensagem
-
     )');
   $stmt->execute(array( 
-    
-      ':nome' => $nome,
-      ':email' => criptografar(var: $email), 
-      ':tel' => criptografar(var: $tel), 
-      ':empresa' => criptografar(var: $empresa), 
-      ':servico' => criptografar(var: $servico), 
-      ':assunto' => criptografar(var: $assunto), 
-      ':mensagem' => criptografar(var: $mensagem), 
-
+    ':nome' => $nome,
+    ':email' => criptografar(var: $email), 
+    ':tel' => criptografar(var: $tel), 
+    ':empresa' => criptografar(var: $empresa), 
+    ':servico' => criptografar(var: $servico), 
+    ':assunto' => criptografar(var: $assunto), 
+    ':mensagem' => criptografar(var: $mensagem), 
   ));
 
   if($stmt->rowCount() >= 1){
 
      $assunto_email = utf8_decode('Halley Log - Novo contato realizado');
     $corpoMSG = utf8_decode('
-    <body style="background-color: #EDEDED">
+    <body style="background-color: #EDEDED; font-family: Trebuchet MS, sans-serif;">
       <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
         <tbody>
           <tr><td height="30" style="background-color: #ffffff">&nbsp;</td></tr>
           <tr width="750" style="background-color: #ffffff; text-align:center">
-            <td width="750" align="center" style="background-color: #ffffff"><img src="https://homolog.planetaw.ag/halley/wp-content/uploads/2025/10/logo-halley.svg" width="150" alt="">
+            <td width="750" align="center" style="background-color: #ffffff"><img src="https://halleylog.com.br/site/wp-content/uploads/2026/02/logo-halley-scaled.webp" width="250" alt="">
             </td>
           </tr>
           <tr><td style="background-color: #ffffff" height="30">&nbsp;</td></tr>
 
           <tr>
             <td>
-              <table width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff; font-size:16px; font-family: Verdana; color: #525252; line-height: 1.5">
+              <table width="750" border="0" cellspacing="0" cellpadding="0" style="background-color:#ffffff; font-size:16px; color: #525252; line-height: 1.5">
                 <tbody>
                   <tr>
                     <td>&nbsp;</td>
@@ -137,7 +132,7 @@ try {
 
                   <tr>
                     <td>&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="2" cellpadding="10" style="background-color:#ffffff; font-size:14px; font-family: Verdana; color: #525252; line-height: 1.5">
+                    <td><table width="100%" border="0" cellspacing="2" cellpadding="10" style="background-color:#ffffff; font-size:14px; color: #525252; line-height: 1.5">
                       <tbody>
                         <tr>
                           <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Nome:</strong></p></td>
@@ -160,7 +155,7 @@ try {
                           <td valign="top" bgcolor="#f6f6f6">'.$servico.'</td>
                         </tr>
                         <tr>
-                          <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Assunt  o:</strong></p></td>
+                          <td width="120" valign="top" bgcolor="#f6f6f6"><p><strong>Assunto:</strong></p></td>
                           <td valign="top" bgcolor="#f6f6f6">'.$assunto.'</td>
                         </tr>
                         <tr>
@@ -220,7 +215,7 @@ try {
                   <tr style="background-color: #FF272B;">
                     <td>&nbsp;</td>
                     <td align="center">
-                      <a href="hlaleylo.com.br" style="color: #FFF; text-decoration: none" target="_blank"> <strong>halley.com.br</strong> </a>
+                      <a href="https://halleylog.com.br" style="color: #FFF; text-decoration: none" target="_blank"> <strong>halley.com.br</strong> </a>
                     </td>
                     <td>&nbsp;</td>
                   </tr>
@@ -236,8 +231,7 @@ try {
           </tr>
         </tbody>
       </table>
-    
-</body>
+    </body>
     ');
 
     $email = $email;

@@ -6,7 +6,7 @@ $zap = str_replace(array('(', ')', '-', ' '), '', $whats);
 ?>
 
 <section class="whatsapp">
-    <a href="https://wa.me/55<?= $zap; ?>" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/55<?= $zap; ?>" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">
         <i class="fa-brands fa-whatsapp fs-2"></i>
     </a>
 </section>

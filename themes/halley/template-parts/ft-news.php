@@ -28,7 +28,7 @@
 
       </div>
 
-      <img src="<?= wp_get_attachment_image_src(67, 'full')[0]; ?>" class="news-img" alt="<?= get_post(67)->post_title; ?>">
+      <img src="<?= wp_get_attachment_image_src(67, 'full')[0]; ?>" class="news-img" alt="<?= get_post(67)->post_title; ?>" fetchpriority="low" loading="lazy">
 
     </div>
 

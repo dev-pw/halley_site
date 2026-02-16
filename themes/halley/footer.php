@@ -12,13 +12,10 @@
                 <div class="col-md-6 col-lg-2 text-white">
                     <h3 class="mb-3">Sobre nós</h3>
                     <p class="small m-0">
-                        <a href="#" class="link-light text-decoration-none">Fale com a Halley</a>
+                        <a href="<?= the_permalink(53); ?>" class="link-light text-decoration-none">Fale com a Halley</a>
                     </p>
                     <p class="small m-0">
-                        <a href="#" class="link-light text-decoration-none">Logística</a>
-                    </p>
-                    <p class="small m-0">
-                        <a href="#" class="link-light text-decoration-none">Somos Halley</a>
+                        <a href="<?= the_permalink(52); ?>" class="link-light text-decoration-none">Somos Halley</a>
                     </p>
                 </div>
 
@@ -27,13 +24,13 @@
                 <div class="col-md-6 col-lg-3 text-white">
                     <h3 class="mb-3">Principais Serviços</h3>
                     <p class="small m-0">
-                        <a href="#" class="link-light text-decoration-none">Transporte de Material Biológico</a>
+                        <a href="<?= the_permalink(68); ?>" class="link-light text-decoration-none">Transporte de Material Biológico</a>
                     </p>
                     <p class="small m-0">
-                        <a href="#" class="link-light text-decoration-none">Transporte de Produtos Farmacêuticos</a>
+                        <a href="<?= the_permalink(70); ?>" class="link-light text-decoration-none">Transporte de Produtos Farmacêuticos</a>
                     </p>
                     <p class="small m-0">
-                        <a href="#" class="link-light text-decoration-none">Transporte de Carga Seca</a>
+                        <a href="<?= the_permalink(72); ?>" class="link-light text-decoration-none">Transporte de Carga Seca</a>
                     </p>
                 </div>
 

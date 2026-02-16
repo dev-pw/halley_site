@@ -13,7 +13,7 @@ if (count($categories) > 1) {
 } else {
     $cat = $categories[0]->cat_name;
 }
-has_post_thumbnail() ? $img = get_post_thumbnail_id($post->ID) : $img = 59;
+has_post_thumbnail() ? $img = get_post_thumbnail_id($post->ID) : $img = 128;
 
 ?>
 

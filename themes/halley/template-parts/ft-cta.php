@@ -3,7 +3,7 @@
         <div class="row">
 
             <div class="col-md-6 p-0">
-                <img src="<?= wp_get_attachment_image_src(85, 'full')[0]; ?>" class="img-fluid w-100 h-100" alt="<?= get_post(85)->post_title; ?>">
+                <img src="<?= wp_get_attachment_image_src(85, 'full')[0]; ?>" class="img-fluid w-100 h-100" alt="<?= get_post(85)->post_title; ?>" fetchpriority="low" loading="lazy">
             </div>
 
             <div class="col-md-6 bg-primary text-white">

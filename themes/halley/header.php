@@ -23,15 +23,23 @@ ini_set('display_errors', 'on');
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="A Halley é uma empresa que atua na logística e transporte de diferentes tipos de carga: material biológico, medicamentos e carga seca. Nossos clientes sabem todos os dias que, se a remessa tá indo de Halley, tá indo bem.">
+   <meta name="author" content="Halley Log">
+   <meta property="og:type" content="website">
+
+   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+
    <?php wp_head(); ?>
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 <!-- Preload -->
 <div id="preload">
-   <img src="<?= $preload; ?>" width="250">
+   <img src="<?= $preload; ?>" width="250" fetchpriority="high" loading="eager">
 </div>
 <!-- Preload -->
 
@@ -49,7 +57,7 @@ ini_set('display_errors', 'on');
 
             <div class="col-auto col-lg-4 l-brand text-center">
                <a href="<?= bloginfo('url'); ?>" title="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>">
-                  <img src="<?= $logo; ?>" alt="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>" class="w-100">
+                  <img src="<?= $logo; ?>" alt="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>" class="w-100" fetchpriority="high" loading="eager">
                </a>
             </div>
 
@@ -84,7 +92,7 @@ ini_set('display_errors', 'on');
             <div class="justify-content-between row">
                <div class="col-10 col-md-7">
                   <a href="<?= bloginfo('url'); ?>" title="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>">
-                     <img src="<?= $logo_menu; ?>" alt="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>" class="w-100">
+                     <img src="<?= $logo_menu; ?>" alt="<?= bloginfo('name') . ' - ' . bloginfo('description'); ?>" class="w-100" fetchpriority="high" loading="eager">
                   </a>
                </div>
                <div class="col-auto">

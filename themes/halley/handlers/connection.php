@@ -4,10 +4,10 @@
 // ===== FUNÇÃO CONECTAR ======
 // ============================
 function conectar(){
-  $server = "halley_homo.vpshost4670.mysql.dbaas.com.br";
-  $user   = "halley_homo";
+  $server = "halley_wp.mysql.dbaas.com.br";
+  $user   = "halley_wp";
   $pass   = "LDX0K4wHT9q@";
-  $db     = "halley_homo";
+  $db     = "halley_wp";
 
   try {
       $pdo = new PDO("mysql:host=$server;dbname=$db", $user, $pass );

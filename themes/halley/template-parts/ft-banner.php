@@ -72,7 +72,7 @@
                 <a <?= $link . $targ; ?> title="<?= get_the_title(); ?>">
                     <picture>
                         <source srcset="<?= $desktop['url']; ?>" media="(min-width: 768px)">
-                        <img src="<?= $mobile['url']; ?>" alt="<?= get_the_title(); ?>" class="img-fluid w-100">
+                        <img src="<?= $mobile['url']; ?>" alt="<?= get_the_title(); ?>" class="img-fluid w-100" fetchpriority="high" loading="eager">
                     </picture>
                 </a>
             </div>

@@ -23,7 +23,7 @@ $mail->Password = "vF8xl8pwdDE2j@Oq"; // SENHA
 $mail->SMTPSecure = "tls"; // SE O SMTP TIVER CRIPTOGRAFIA, USAR ESTA LINHA
 $mail->Port = 587; // PORTA
 $mail->From = "desenvolvimento@planetaw.ag"; // MESMO EMAIL DO USERNAME
-$mail->FromName = utf8_decode('NOME'); // NOME DO REMETENTE
+$mail->FromName = utf8_decode('Halley Log'); // NOME DO REMETENTE
 
 $mail->addAddress($email); // EMAIL DO DESTINATÁRIO
 
