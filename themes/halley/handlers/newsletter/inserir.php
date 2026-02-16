@@ -17,7 +17,7 @@ try {
   $pdo = conectar();
 	// SELECT
 
-  $stmt = $pdo->prepare("SELECT * FROM newsletter_site WHERE email_news = :email");
+  $stmt = $pdo->prepare("SELECT * FROM wp_newsletter WHERE email_news = :email");
   $stmt->execute(array(
     ':email' => $email
   ));
@@ -38,7 +38,7 @@ try {
 
     // INSERT
     $stmt = $pdo->prepare('
-      INSERT INTO newsletter_site (
+      INSERT INTO wp_newsletter (
         email_news, data_cadastro
 
       ) VALUES (
