@@ -19,7 +19,7 @@ $mail->IsSMTP(); // DEFINE O PADRÃO SMTP
 $mail->Host = "smtp-relay.brevo.com"; // HOST DO SMTP
 $mail->AuthType   = 'LOGIN';
 $mail->SMTPAuth = true;
-$mail->Username = "a28921001@smtp-brevo.com"; // EMAIL
+$mail->Username = ""; // EMAIL
 $mail->Password = ''; // SENHA
 $mail->SMTPSecure = "tls"; // SE O SMTP TIVER CRIPTOGRAFIA, USAR ESTA LINHA
 $mail->Port = 587; // PORTA
