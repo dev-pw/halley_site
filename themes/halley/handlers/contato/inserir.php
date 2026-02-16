@@ -55,7 +55,7 @@ try {
 
   // INSERT
   $stmt = $pdo->prepare('
-    INSERT INTO contato_site (
+    INSERT INTO wp_contato (
       nome,
       email,
       tel,
