@@ -8,7 +8,7 @@ function enqueue_scripts() {
 	//VERSÃO DO TEMA
 	date_default_timezone_set('America/Sao_Paulo'); // Define o fuso horário
 	$data_hora_atual = date('H:i:s');
-	$tema_version = $data_hora_atual;
+	$tema_version = '1.0';
 
 	//BOOTSTRAP JS
 	// wp_enqueue_script( 'bootstrap-poppers', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/assets/umd/popper.min.js', array('jquery'), $tema_version, true );

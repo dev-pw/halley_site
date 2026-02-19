@@ -3,7 +3,7 @@
  * Template Name: Quem Somos
  * Template Post Type: page
  * @package WordPress
- * @subpackage halley-site
+ * @subpackage halley
  *
 */
 
