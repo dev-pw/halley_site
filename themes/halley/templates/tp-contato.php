@@ -105,7 +105,7 @@ $whats_url = str_replace(array('(', ')', '-', ' '), '', $whatsapp);
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control border-primary text-dark rounded js_tel_mask" id="telefone" placeholder="telefone" name="tel" maxlength="15" wfd-id="id2">
+                                        <input type="text" class="form-control border-primary text-dark rounded tel_mask" id="telefone" placeholder="telefone" name="tel" maxlength="15" wfd-id="id2">
                                         <label for="telefone" class="fw-bold small text-primary form-label">Telefone *<span class="aviso_label text-danger px-2" id="aviso_label_nome" style="display:none"> </span></label>
                                     </div>
                                 </div>
