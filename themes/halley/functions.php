@@ -81,7 +81,7 @@ include 'inc/default.php';
 Script defer
 --------------------------------------------------------------*/
 
-function ivision_defer_scripts( $tag, $handle, $src ) {
+function defer_scripts( $tag, $handle, $src ) {
     // quais scripts podem usar defer
     $defer = array(
         'jquery',
@@ -98,7 +98,7 @@ function ivision_defer_scripts( $tag, $handle, $src ) {
 
     return $tag;
 }
-add_filter( 'script_loader_tag', 'ivision_defer_scripts', 10, 3 );
+add_filter( 'script_loader_tag', 'defer_scripts', 10, 3 );
 
 
 /*--------------------------------------------------------------

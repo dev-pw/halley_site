@@ -29,7 +29,7 @@ get_header();
             <div class="row gy-4">
 
                 <div class="col-md-6 mx-auto col-lg-4">
-                    <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(100, 'full')[0]; ?>" alt="<?= get_post(100)->post_title; ?>">
+                    <img class="img-fluid rounded-top-5 rounded-end-5" src="<?= wp_get_attachment_image_src(133, 'full')[0]; ?>" alt="<?= get_post(133)->post_title; ?>">
                 </div>
 
                 <div class="col-lg-8 d-grid">

@@ -37,35 +37,43 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
 
                 <h2 class="mb-4 text-white text-center">Nossos Números </h2>
             
-                <div class="row gy-4 text-white mt-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-4 text-white mt-5 justify-content-center">
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">110</p>
-                            <p>Remessas Diárias de Materiais Biológicos em 2017</p>
+                            <p>Remessas Diárias de Materiais Biológicos desde 2017</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">480</p>
-                            <p>Equipamentos Cirúrgicos Transportados em 2021</p>
+                            <p>Média de Equipamentos Cirúrgicos Transportados em 2021</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
-                            <p class="text-secondary fs-1 fw-bolder">700</p>
-                            <p>Kg de Equipamentos Pesados: Média Mensal</p>
+                            <p class="text-secondary fs-1 fw-bolder"> 400 </p>
+                            <p>Toneladas de Peso transportado: Média Mensal</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col">
                         <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
                             <p class="text-secondary fs-1 fw-bolder">65</p>
                             <p>Mil Doses de Anestésico para Covid em 2021</p>
                         </div>
                     </div>
+
+                    <div class="col">
+                        <div class="border p-4 rounded-5 text-center border-light border-opacity-50 d-flex flex-column justify-content-center align-items-center h-100">
+                            <p class="text-secondary fs-1 fw-bolder">4500</p>
+                            <p> Médias de entrega por Ano </p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -147,7 +155,7 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
                 <div class="col-md-6">
                     
                     <figure class="text-center">
-                        <img src="<?= wp_get_attachment_url('112'); ?>" class="rounded-circle object-fit-cover mb-3" width="300px" height="300px" alt="<?= get_post(112)->post_title; ?>">
+                        <img src="<?= wp_get_attachment_url('132'); ?>" class="rounded-circle object-fit-cover mb-3" width="300px" height="300px" alt="<?= get_post(132)->post_title; ?>">
                         <figcaption>
                             <p class="text-primary m-0"> Marcio Mantello </p>
                             <span class="small">Diretor Executivo</span>
