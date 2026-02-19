@@ -9,7 +9,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="bg-secondary h-100 rounded-4 text-white py-4 px-5 d-flex flex-column justify-content-center align-items-center" style="min-height: 292px;">
                     <span class="fs-6">Conheça nossos serviços</span>
-                    <p class="fw-bolder fs-4">Logística, Armazenagem e Transporte</p>
+                    <p class="fw-bolder fs-4 text-center">Logística, Armazenagem e Transporte</p>
                 </div>
             </div>
 
