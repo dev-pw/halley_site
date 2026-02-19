@@ -31,7 +31,7 @@ $mail->Port = $_ENV['EMAIL_PORT']; // PORTA
 $mail->setFrom('contato@halleylog.com.br', 'Halley Log'); // MESMO EMAIL DO USERNAME
 
 $mail->addAddress($email); // EMAIL DO DESTINATÁRIO
-// $mail->AddBCC("lucas.brandao@planetaw.ag"); // EMAIL DO DESTINATÁRIO
+$mail->AddBCC("atendimento@halleylog.com.br"); // EMAIL DO DESTINATÁRIO
 
 
 $mail->IsHTML(true); // DEFINE QUE O E-MAIL SERÁ ENVIADO COMO HTML
