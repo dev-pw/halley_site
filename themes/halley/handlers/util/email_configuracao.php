@@ -22,6 +22,7 @@ $mail = new PHPMailer(true);
 $mail->SMTPDebug = 0; // ATIVA O DEBUGGIN PARA VERIFICAÇÃO DE ERROS (remover quando finalizados os testes)
 $mail->IsSMTP(); // DEFINE O PADRÃO SMTP
 $mail->Host = $_ENV['EMAIL_HOST']; // HOST DO SMTP
+$mail->AuthType   = 'LOGIN';
 $mail->SMTPAuth = true;
 $mail->Username = $_ENV['EMAIL_USER']; // EMAIL
 $mail->Password = $_ENV['EMAIL_PASS']; // SENHA
