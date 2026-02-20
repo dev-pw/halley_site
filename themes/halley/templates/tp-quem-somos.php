@@ -146,7 +146,7 @@ $img = has_post_thumbnail() ? get_post_thumbnail_id($post->ID) : 110;
 
                 <div class="col-md-6">
                     <div class="bg-light p-5 d-flex flex-column h-100 justify-content-center">
-                        <h2 class="text-primary mb-2">Uma Empresa de Pessoas para Pessoas.</h2>
+                        <h2 class="text-primary mb-2">Uma empresa de pessoas para pessoas.</h2>
                         <p>Fácil acesso aos diretores, sempre que necessário, é mais um ponto forte da Halley. Nosso foco é resolver a logística, o     transporte e armazenagem de forma rápida e eficiente.</p>
                         <p class="small">"O principal motivo de os clientes continuarem com a gente é a dedicação. Ele liga e fala com uma pessoa. A gente trata todos com exclusividade.”</p>
                     </div>
