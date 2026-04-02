@@ -1,8 +1,4 @@
 <?php
-
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-
 /**
  * Header
  * @package WordPress
@@ -37,6 +33,7 @@ ini_set('display_errors', 'on');
 </head>
 
 <body <?php body_class(); ?>>
+   <?php wp_body_open(); ?>
 
 <!-- Preload -->
 <div id="preload">
